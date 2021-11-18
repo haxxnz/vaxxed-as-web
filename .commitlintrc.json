@@ -1,4 +1,3 @@
 {
-  "extends": ["jira"],
-  "plugins": ["commitlint-plugin-jira-rules"]
+  "extends": ["@commitlint/config-conventional"]
 }

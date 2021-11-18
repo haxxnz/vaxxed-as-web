@@ -27,3 +27,21 @@ Run the development scripts
 ```sh
 yarn gatsby:clean && yarn gatsby:develop
 ```
+
+### Contributing
+
+This project uses
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), instead
+of using
+
+```sh
+git commit ...
+```
+
+Please type
+
+```sh
+yarn commit
+```
+
+A prompt will appear on your CLI to fill the commit message
