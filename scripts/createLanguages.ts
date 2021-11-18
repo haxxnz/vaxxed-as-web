@@ -64,12 +64,13 @@ const createLanguages = async (): Promise<void> => {
     });
 
   const languageOptions = translations.map(
-    ({ thisLanguage: { name, callToAction }, language, isRTL }) => {
+    ({ thisLanguage: { name, callToAction }, language, isRTL, header }) => {
       const option = {
         value: language,
         name,
         callToAction,
-        isRTL
+        isRTL,
+        changeLanguage: header["Change language"]
       };
       return option;
     }

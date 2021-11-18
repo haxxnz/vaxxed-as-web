@@ -3,66 +3,77 @@
     "value": "ar",
     "name": "الإنجليزية",
     "callToAction": "استخدم vaxxed.as باللغة الإنجليزية",
-    "isRTL": true
+    "isRTL": true,
+    "changeLanguage": "غير اللغة"
   },
   {
     "value": "de",
     "name": "Deutsch",
     "callToAction": "Verwenden Sie vaxxed.as in Deutsch",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Sprache ändern"
   },
   {
     "value": "en",
     "name": "English",
     "callToAction": "Use vaxxed.as in English",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Change language"
   },
   {
     "value": "es",
     "name": "Español",
     "callToAction": "Utilice vaxxed.as en Español",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Cambiar idioma"
   },
   {
     "value": "hi",
     "name": "अंग्रेज़ी",
     "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "भाषा बदलें"
   },
   {
     "value": "mi",
     "name": "Te reo Māori",
     "callToAction": "Whakamahia te vaxxed.as i te reo Māori",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Huri reo"
   },
   {
     "value": "nl",
     "name": "Dutch",
     "callToAction": "Gebruik vaxxed.as in het Dutch",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Taal wijzigen"
   },
   {
     "value": "ru",
     "name": "Русский",
     "callToAction": "Использовать vaxxed.as на русском",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Изменить язык"
   },
   {
     "value": "sm",
     "name": "Samoa",
     "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "Suia le gagana"
   },
   {
     "value": "zh-cn",
     "name": "简体中文",
     "callToAction": "使用 vaxxed.as 简体中文",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "改变语言"
   },
   {
     "value": "zh-hk",
     "name": "中國傳統的",
     "callToAction": "在繁體中文中使用 vaxxed.as",
-    "isRTL": false
+    "isRTL": false,
+    "changeLanguage": "更改語言"
   }
 ]

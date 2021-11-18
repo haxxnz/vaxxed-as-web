@@ -4,6 +4,7 @@ import { Trans, useI18next } from "gatsby-plugin-react-i18next";
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/solid";
 import { TranslateIcon } from "@heroicons/react/outline";
 import { useLocation } from "@reach/router";
+import { useInterval } from "react-interval-hook";
 import languages from "../data/languageOptions.json";
 
 type LanguageOption = {
@@ -11,6 +12,7 @@ type LanguageOption = {
   name: string;
   callToAction: string;
   isRTL: boolean;
+  changeLanguage: string;
 };
 
 const languageOptions: LanguageOption[] = languages;
@@ -19,11 +21,29 @@ const classNames = (...classes: string[]): string =>
   classes.filter(Boolean).join(" ");
 
 const LanguageSelector = () => {
+  const [languageIndex, setLanguageIndex] = useState<number>(0);
   const location = useLocation();
   const { changeLanguage } = useI18next();
 
   const languageName =
     location?.pathname?.split("/")?.filter(path => path !== "")?.[0] ?? "en";
+
+  const before = languageOptions.filter(({ value }) => value === languageName);
+  const after = languageOptions
+    .filter(({ value }) => value !== languageName)
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const options = [...before, ...after];
+
+  const { stop } = useInterval(() => {
+    const newIndex = languageIndex + 1;
+    if (newIndex >= languageOptions.length) {
+      setLanguageIndex(0);
+      stop();
+      return;
+    }
+    setLanguageIndex(newIndex);
+  }, 4000);
 
   return (
     <Listbox value={languageName} onChange={value => changeLanguage(value)}>
@@ -37,9 +57,12 @@ const LanguageSelector = () => {
                   className="hidden w-5 h-5 sm:block"
                 />
                 <p className="text-sm font-medium">
-                  <Trans i18nKey="header.Change language">
-                    Change language
-                  </Trans>
+                  {options.map(({ changeLanguage, value }, index) => {
+                    if (index === languageIndex) {
+                      return <span key={value}>{changeLanguage}</span>;
+                    }
+                    return null;
+                  })}
                 </p>
               </div>
               <Listbox.Button className="relative inline-flex items-center p-2 text-sm font-medium text-white bg-indigo-500 rounded-full -ms-4 hover:bg-indigo-600 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500">
@@ -63,7 +86,7 @@ const LanguageSelector = () => {
             show={open}
           >
             <Listbox.Options className="absolute z-50 mt-2 overflow-hidden overflow-y-auto bg-white divide-y divide-gray-200 rounded-md shadow-lg ends-0 origin-top-ends w-72 ring-1 ring-black ring-opacity-5 focus:outline-none max-h-96">
-              {languageOptions.map(({ value, name, callToAction, isRTL }) => {
+              {options.map(({ value, name, callToAction, isRTL }) => {
                 return (
                   <Listbox.Option
                     key={value}

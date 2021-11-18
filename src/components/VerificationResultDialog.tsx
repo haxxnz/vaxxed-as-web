@@ -86,12 +86,6 @@ const VerificationResultDialog = () => {
           >
             &#8203;
           </span>
-          {success && (
-            <div className="fireworks">
-              <div className="before" />
-              <div className="after" />
-            </div>
-          )}
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -307,6 +301,12 @@ const VerificationResultDialog = () => {
               </div>
             </div>
           </Transition.Child>
+          {success && (
+            <div className="fireworks">
+              <div className="before" />
+              <div className="after" />
+            </div>
+          )}
         </div>
       </Dialog>
     </Transition.Root>
