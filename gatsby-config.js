@@ -9,7 +9,6 @@ module.exports = {
     title: "Vaxxed As"
   },
   flags: {
-    DEV_SSR: true,
     FAST_DEV: true,
     PARALLEL_SOURCING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: false,
@@ -76,14 +75,14 @@ module.exports = {
     "gatsby-plugin-workerize-loader",
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-robots-txt",
-    "gatsby-plugin-offline"
-    // ,{
-    //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-    //   options: {
-    //     analyzerMode: "static",
-    //     generateStatsFile: true,
-    //     openAnalyzer: true
-    //   }
-    // }
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerMode: "static",
+        generateStatsFile: true,
+        openAnalyzer: false
+      }
+    }
   ]
 };
