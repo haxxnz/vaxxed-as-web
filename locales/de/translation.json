@@ -1,0 +1,31 @@
+{
+  "footer": {
+    "disclaimer": "Dies ist keine offizielle Regierungswebsite. Weitere Informationen zum CovidPass finden Sie unter https://nzcp.covid19.health.nz",
+    "privacy": "Die Ergebnisse der Scans werden vertraulich behandelt und nicht an Dritte, weder privat, öffentlich noch staatlich, weitergegeben. Dieser Webseite wurde keinerlei Tracking hinzugefügt. Wenn Sie Probleme feststellen, senden Sie bitte eine E-Mail an vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Sprache ändern",
+    "Scan your NZ COVIDpass": "Scannen Sie Ihren NZ CovidPass"
+  },
+  "invalidCodes": {
+    "expired": "Ihr CovidPass ist abgelaufen. Bitte wenden Sie sich an das [Gesundheitsministerium (Ministry of Health)]({{link}})",
+    "invalid": "Wir bitten um Ihr Verständnis, aber leider konnten wir Ihren CovidPass nicht überprüfen. Bitte wenden Sie sich an das [Gesundheitsministerium (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Dies scheint nicht der CovidPass zu sein. Probieren Sie bitte erneut oder wenden Sie sich an das [Gesundheitsministerium (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Verwenden Sie vaxxed.as in Deutsch",
+    "name": "Deutsch"
+  },
+  "verificationDialog": {
+    "Attention needed": "Aufmerksamkeit erforderlich",
+    "Close": "Schließen",
+    "Copy results": "Ergebnisse übernehmen",
+    "Date of birth": "Geburtsdatum",
+    "First name": "Vorname",
+    "Last name": "Nachname",
+    "Verification results": "Prüfergebnisse",
+    "View details": "Details anzeigen",
+    "onlyForVerificationPurposes": "Bitte verwenden Sie die Ergebnisse nur zu Überprüfungszwecken. Es ist gut, die Privatsphäre aller zu respektieren.",
+    "yes": "Ja"
+  }
+}

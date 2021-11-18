@@ -25,6 +25,7 @@
     "Last name": "Apellido",
     "Verification results": "Resultados de la verificación",
     "View details": "Ver detalles",
-    "onlyForVerificationPurposes": "Utilice los resultados únicamente para fines de verificación. Es bueno respetar la privacidad de todos."
+    "onlyForVerificationPurposes": "Utilice los resultados únicamente para fines de verificación. Es bueno respetar la privacidad de todos.",
+    "yes": "Sí"
   }
 }

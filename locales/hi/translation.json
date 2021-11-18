@@ -8,9 +8,9 @@
     "Scan your NZ COVIDpass": "अपने NZ COVIDPass को स्कैन करें"
   },
   "invalidCodes": {
-    "expired": "抱歉，您的 COVIDpass 好像已過期。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
-    "invalid": "क्षमा करें, हम आपके COVIDpass की पुष्टि नहीं कर सके। कृपया [स्वास्थ्य मंत्रालय] से संपर्क करें (Ministry of Health)]({{link}})",
-    "notAcovidPass": "क्षमा करें, यह कोई COVIDpass नहीं लगता। कृपया [स्वास्थ्य मंत्रालय] से संपर्क करें (Ministry of Health)]({{link}})"
+    "expired": "क्षमा करें, ऐसा लगता है कि आप कोविदपास की समय सीमा समाप्त हो गई है। कृपया [स्वास्थ्य मंत्रालय (Ministry of Health)]({{link}}) से संपर्क करें",
+    "invalid": "क्षमा करें, हम आपके COVIDpass की पुष्टि नहीं कर सके। कृपया [मिनिस्ट्री ऑफ़ हेल्थ] से संपर्क करें (Ministry of Health)]({{link}})",
+    "notAcovidPass": "क्षमा करें, यह कोई COVIDpass नहीं लगता। कृपया [मिनिस्ट्री ऑफ़ हेल्थ] से संपर्क करें (Ministry of Health)]({{link}})"
   },
   "thisLanguage": {
     "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",
@@ -25,6 +25,7 @@
     "Last name": "अंतिम नाम",
     "Verification results": "सत्यापन के परिणाम",
     "View details": "विवरण देखें",
-    "onlyForVerificationPurposes": "कृपया परिणामों का उपयोग केवल सत्यापन उद्देश्यों के लिए करें। हर किसी की निजता का सम्मान करना अच्छी बात है।"
+    "onlyForVerificationPurposes": "कृपया परिणामों का उपयोग केवल सत्यापन उद्देश्यों के लिए करें। हर किसी की निजता का सम्मान करना अच्छी बात है।",
+    "yes": "हाँ"
   }
 }

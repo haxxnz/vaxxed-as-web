@@ -1,0 +1,31 @@
+{
+  "footer": {
+    "disclaimer": "Dit is geen officiële website van de overheid. Ga voor meer informatie over de COVIDpass naar https://nzcp.covid19.health.nz",
+    "privacy": "De resultaten van de scans worden niet gedeeld met een entiteit; privé, openbaar of overheidsinstanties. Er is geen enkele tracking toegevoegd aan deze site, als u problemen ondervindt, stuur dan een e-mail naar vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Taal wijzigen",
+    "Scan your NZ COVIDpass": "Scan je NZ COVIDpass"
+  },
+  "invalidCodes": {
+    "expired": "Sorry, het lijkt erop dat je COVIDpass is verlopen. Neem contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})",
+    "invalid": "Sorry, we hebben je COVIDpass niet kunnen verifiëren. Neem dan contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Sorry, dit lijkt geen COVIDpass te zijn. Neem contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Gebruik vaxxed.as in het Dutch",
+    "name": "Dutch"
+  },
+  "verificationDialog": {
+    "Attention needed": "Aandacht vereist",
+    "Close": "Sluiten",
+    "Copy results": "Resultaten kopiëren",
+    "Date of birth": "Geboortedatum",
+    "First name": "Voornaam",
+    "Last name": "Achternaam",
+    "Verification results": "Resultaten van verificatie",
+    "View details": "Bekijk details",
+    "onlyForVerificationPurposes": "Gebruik de resultaten alleen voor verificatiedoeleinden. Het is goed om ieders privacy te respecteren.",
+    "yes": "Ja"
+  }
+}

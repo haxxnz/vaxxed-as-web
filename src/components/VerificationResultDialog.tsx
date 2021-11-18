@@ -3,7 +3,6 @@ import { Fragment, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
-  QrcodeIcon,
   XIcon,
   ExclamationIcon,
   SwitchHorizontalIcon
@@ -103,32 +102,35 @@ const VerificationResultDialog = () => {
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <div className="inline-block w-full max-w-md p-2 overflow-hidden text-gray-700 align-bottom transition-all transform bg-white shadow-xl text-starts dark:bg-gray-50 stripped-background rounded-3xl sm:my-8 sm:align-middle">
-              <div className="bg-gray-600 shadow-md dark:bg-gray-800 rounded-3xl">
-                <div className="w-full p-3 text-gray-100 dark:text-gray-300">
-                  <div className="flex items-center justify-end">
-                    <button
-                      ref={closeButtonRef}
-                      aria-label={translate("verificationDialog.Close")}
-                      className="z-10 inline-flex items-center p-2 border border-gray-500 rounded-full shadow-sm hover:bg-gray-500 focus:outline-none"
-                      type="button"
-                      onClick={closeDialog}
-                    >
-                      <XIcon aria-hidden="true" className="w-6 h-6" />
-                    </button>
-                  </div>
+              <div
+                className={`${
+                  success && status === "success"
+                    ? "bg-teal-600 dark:bg-teal-700"
+                    : "bg-gray-600 dark:bg-gray-800"
+                } shadow-md rounded-3xl`}
+              >
+                <div className="relative w-full p-3 text-gray-50 dark:text-gray-100">
+                  <h2 className="mt-2 text-6xl font-extrabold text-center uppercase">
+                    {success && status === "success" ? "yes" : "\u00A0"}
+                  </h2>
                 </div>
                 <div className="w-full">
-                  <div className="w-full h-10 realtive">
-                    <div className="absolute flex items-center justify-center w-full">
-                      <div className="flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg dark:bg-gray-200">
-                        <QrcodeIcon
-                          aria-hidden="true"
-                          className={`${
-                            !success && status === "success"
-                              ? "text-red-600 dark:text-red-700"
-                              : "text-green-600 dark:text-green-700"
-                          } w-14 h-14`}
-                        />
+                  <div className="w-full realtive">
+                    <div className="absolute flex items-center justify-end w-full px-2 mx-3 -mt-10">
+                      <div className="flex items-center justify-center w-20 h-20">
+                        {success && status === "success" && (
+                          <Fragment>
+                            <span className="absolute z-0 w-6 h-6 bg-white" />
+                            <BadgeCheckIcon
+                              aria-hidden="true"
+                              className="absolute z-0 w-16 h-16 text-white dark:text-gray-100"
+                            />
+                            <BadgeCheckIcon
+                              aria-hidden="true"
+                              className="z-10 text-sky-500 dark:text-sky-600 w-14 h-14"
+                            />
+                          </Fragment>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -206,22 +208,45 @@ const VerificationResultDialog = () => {
                               </dd>
                             </div>
                           </dl>
-                          <div className="p-4 rounded-2xl bg-blue-50">
-                            <div className="flex space-start-3">
-                              <div className="flex-shrink-0">
-                                <BadgeCheckIcon
-                                  aria-hidden="true"
-                                  className="w-8 h-8 text-blue-500"
-                                />
-                              </div>
+                          {!success && status === "success" && (
+                            <div className="px-4 py-3 rounded-2xl bg-orange-50 dark:bg-orange-900">
                               <div className="space-y-2">
-                                <div className="text-gray-700">
-                                  <ReactMarkdown className="prose">
+                                <h3 className="space-x-3 text-xl font-bold leading-8 text-orange-500 dark:text-orange-300 dark:font-medium">
+                                  <ExclamationIcon
+                                    aria-hidden="true"
+                                    className="inline-block w-8 h-8 text-orange-500 dark:text-orange-300"
+                                  />
+                                  <span>
+                                    <Trans i18nKey="verificationDialog.Attention needed">
+                                      Attention needed
+                                    </Trans>
+                                  </span>
+                                </h3>
+                                <div className="text-gray-700 dark:text-gray-300">
+                                  <ReactMarkdown className="leading-tight">
                                     {translate(
-                                      "verificationDialog.onlyForVerificationPurposes"
+                                      `invalidCodes.${getTranslation(
+                                        violates?.section
+                                      )}`,
+                                      {
+                                        link:
+                                          violates?.link ??
+                                          "https://nzcp.covid19.health.nz"
+                                      }
                                     )}
                                   </ReactMarkdown>
                                 </div>
+                              </div>
+                            </div>
+                          )}
+                          <div className="px-4 py-3 rounded-2xl bg-sky-50 dark:bg-sky-900">
+                            <div className="space-y-2">
+                              <div className="text-gray-700 dark:text-gray-300">
+                                <ReactMarkdown className="leading-tight">
+                                  {translate(
+                                    "verificationDialog.onlyForVerificationPurposes"
+                                  )}
+                                </ReactMarkdown>
                               </div>
                             </div>
                           </div>
@@ -240,39 +265,6 @@ const VerificationResultDialog = () => {
                           </div>
                         </div>
                       </ReactCardFlip>
-                      {!success && status === "success" && (
-                        <div className="p-4 rounded-2xl bg-orange-50">
-                          <div className="flex space-start-3">
-                            <div className="flex-shrink-0">
-                              <ExclamationIcon
-                                aria-hidden="true"
-                                className="w-8 h-8 text-orange-500"
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <h3 className="text-xl font-bold leading-8 text-orange-500 dark:font-medium">
-                                <Trans i18nKey="verificationDialog.Attention needed">
-                                  Attention needed
-                                </Trans>
-                              </h3>
-                              <div className="text-gray-700">
-                                <ReactMarkdown className="prose">
-                                  {translate(
-                                    `invalidCodes.${getTranslation(
-                                      violates?.section
-                                    )}`,
-                                    {
-                                      link:
-                                        violates?.link ??
-                                        "https://nzcp.covid19.health.nz"
-                                    }
-                                  )}
-                                </ReactMarkdown>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      )}
                     </div>
                     <div className="flex w-full overflow-hidden bg-gray-500 shadow-md dark:bg-gray-700 rounded-3xl dark:text-gray-300">
                       <span className="w-full">
@@ -294,6 +286,7 @@ const VerificationResultDialog = () => {
                       </span>
                       <span className="w-full">
                         <button
+                          ref={closeButtonRef}
                           className="z-10 flex items-center justify-center w-full px-2 py-5 text-xl text-center text-gray-200 transform shadow-sm cursor-pointer space-start-3 focus:outline-none hover:bg-gray-700 rounded-3xl dark:hover:bg-gray-800 active:scale-95"
                           type="button"
                           onClick={closeDialog}

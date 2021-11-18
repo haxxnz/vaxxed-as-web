@@ -5,6 +5,11 @@
     "callToAction": "استخدم vaxxed.as باللغة الإنجليزية"
   },
   {
+    "value": "de",
+    "name": "Deutsch",
+    "callToAction": "Verwenden Sie vaxxed.as in Deutsch"
+  },
+  {
     "value": "en",
     "name": "English",
     "callToAction": "Use vaxxed.as in English"
@@ -23,6 +28,11 @@
     "value": "mi",
     "name": "Te reo Māori",
     "callToAction": "Whakamahia te vaxxed.as i te reo Māori"
+  },
+  {
+    "value": "nl",
+    "name": "Dutch",
+    "callToAction": "Gebruik vaxxed.as in het Dutch"
   },
   {
     "value": "ru",
