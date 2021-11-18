@@ -73,11 +73,17 @@ const LanguageSelector = () => {
                         "cursor-default select-none relative p-4 text-sm"
                       )
                     }
+                    disabled={languageName === value}
                     value={value}
                   >
                     {({ selected, active }) => (
                       <div className="flex flex-col">
-                        <div className="flex justify-between">
+                        <div
+                          className={classNames(
+                            "flex justify-between",
+                            isRTL ? "text-right" : "text-left"
+                          )}
+                        >
                           <p
                             className={classNames(
                               selected ? "font-semibold" : "font-normal",
