@@ -25,6 +25,31 @@ const SEO = (): JSX.Element => {
         name="description"
       />
       <title>vaxxed.as | {translate("header.Scan your NZ COVIDpass")}</title>
+      <meta content="website" property="og:type" />
+      <meta content="https://vaxxed.as" property="og:url" />
+      <meta
+        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        property="og:title"
+      />
+      <meta
+        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        property="og:description"
+      />
+      <meta content="https://vaxxed.as/og.png" property="og:image" />
+      <meta content="1200" property="og:image:width" />
+      <meta content="627" property="og:image:height" />
+
+      <meta content="summary_large_image" property="twitter:card" />
+      <meta content="https://vaxx.nz" property="twitter:url" />
+      <meta
+        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        property="twitter:title"
+      />
+      <meta
+        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        property="twitter:description"
+      />
+      <meta content="https://vaxxed.as/og.png" property="twitter:image" />
     </Helmet>
   );
 };
