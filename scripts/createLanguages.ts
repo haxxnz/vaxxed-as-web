@@ -5,6 +5,7 @@ const { readdirSync, outputJSON, readJSON } = fsExtra;
 
 const LOCALES_FOLDER = "./locales";
 const JSON_OUTPUT_OPTIONS = { spaces: 2 };
+const RTL_LANGUAGES = ["ar", "fa", "he", "ps", "ur", "sd"];
 
 type Header = {
   "Scan your NZ COVID pass": string;
@@ -19,6 +20,7 @@ type Translation = {
   language: string;
   header: Header;
   thisLanguage: ThisLanguage;
+  isRTL: boolean;
 };
 
 const createLanguages = async (): Promise<void> => {
@@ -35,21 +37,24 @@ const createLanguages = async (): Promise<void> => {
       const { header, thisLanguage } = await readJSON(
         `${LOCALES_FOLDER}/${language}/translation.json`
       );
-      return { header, thisLanguage, language };
+      const isRTL = RTL_LANGUAGES.includes(language);
+      return { header, thisLanguage, language, isRTL };
     })
   );
 
   const localize = translations
     .filter(({ language }) => language !== "en")
-    .map(({ header, language }) => {
+    .map(({ header, language, isRTL }) => {
       const description =
-        header?.["Scan your NZ COVID pass"] ?? "Scan your NZ COVID pass";
+        header?.["Scan your NZ COVIDpass"] ?? "Scan your NZ COVIDpass";
       const lang = language;
       const name = "Vaxxed As!";
       const short_name = "vaxxed.as";
       const start_url = `/${language}/`;
+      const dir = isRTL ? "rtl" : "ltr";
       const localization = {
         description,
+        dir,
         lang,
         name,
         short_name,
@@ -59,11 +64,12 @@ const createLanguages = async (): Promise<void> => {
     });
 
   const languageOptions = translations.map(
-    ({ thisLanguage: { name, callToAction }, language }) => {
+    ({ thisLanguage: { name, callToAction }, language, isRTL }) => {
       const option = {
         value: language,
         name,
-        callToAction
+        callToAction,
+        isRTL
       };
       return option;
     }

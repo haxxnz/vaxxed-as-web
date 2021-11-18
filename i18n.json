@@ -14,70 +14,80 @@
   ],
   "localize": [
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "مسح COVID الخاص بك في نيوزيلندا",
+      "dir": "rtl",
       "lang": "ar",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/ar/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Scannen Sie Ihren NZ CovidPass",
+      "dir": "ltr",
       "lang": "de",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/de/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Escanea tu NZ COVIDPass",
+      "dir": "ltr",
       "lang": "es",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/es/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "अपने NZ COVIDPass को स्कैन करें",
+      "dir": "ltr",
       "lang": "hi",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/hi/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Matawai i to NZ COVIDpass",
+      "dir": "ltr",
       "lang": "mi",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/mi/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Scan je NZ COVIDpass",
+      "dir": "ltr",
       "lang": "nl",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/nl/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Отсканируйте свой NZ COVIDPass",
+      "dir": "ltr",
       "lang": "ru",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/ru/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "Va&#39;ai lau NZ COVIDpass",
+      "dir": "ltr",
       "lang": "sm",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/sm/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "扫描你的新西兰 CovidPass",
+      "dir": "ltr",
       "lang": "zh-cn",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/zh-cn/"
     },
     {
-      "description": "Scan your NZ COVID pass",
+      "description": "掃描您的 NZ COVIDpass",
+      "dir": "ltr",
       "lang": "zh-hk",
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",

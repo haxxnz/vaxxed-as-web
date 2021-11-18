@@ -2,56 +2,67 @@
   {
     "value": "ar",
     "name": "الإنجليزية",
-    "callToAction": "استخدم vaxxed.as باللغة الإنجليزية"
+    "callToAction": "استخدم vaxxed.as باللغة الإنجليزية",
+    "isRTL": true
   },
   {
     "value": "de",
     "name": "Deutsch",
-    "callToAction": "Verwenden Sie vaxxed.as in Deutsch"
+    "callToAction": "Verwenden Sie vaxxed.as in Deutsch",
+    "isRTL": false
   },
   {
     "value": "en",
     "name": "English",
-    "callToAction": "Use vaxxed.as in English"
+    "callToAction": "Use vaxxed.as in English",
+    "isRTL": false
   },
   {
     "value": "es",
     "name": "Español",
-    "callToAction": "Utilice vaxxed.as en Español"
+    "callToAction": "Utilice vaxxed.as en Español",
+    "isRTL": false
   },
   {
     "value": "hi",
     "name": "अंग्रेज़ी",
-    "callToAction": "हिंदी में vaxxed.as का प्रयोग करें"
+    "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",
+    "isRTL": false
   },
   {
     "value": "mi",
     "name": "Te reo Māori",
-    "callToAction": "Whakamahia te vaxxed.as i te reo Māori"
+    "callToAction": "Whakamahia te vaxxed.as i te reo Māori",
+    "isRTL": false
   },
   {
     "value": "nl",
     "name": "Dutch",
-    "callToAction": "Gebruik vaxxed.as in het Dutch"
+    "callToAction": "Gebruik vaxxed.as in het Dutch",
+    "isRTL": false
   },
   {
     "value": "ru",
     "name": "Русский",
-    "callToAction": "Использовать vaxxed.as на русском"
+    "callToAction": "Использовать vaxxed.as на русском",
+    "isRTL": false
   },
   {
     "value": "sm",
     "name": "Samoa",
-    "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa"
+    "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa",
+    "isRTL": false
   },
   {
     "value": "zh-cn",
     "name": "简体中文",
-    "callToAction": "使用 vaxxed.as 简体中文"
+    "callToAction": "使用 vaxxed.as 简体中文",
+    "isRTL": false
   },
   {
     "value": "zh-hk",
     "name": "中國傳統的",
-    "callToAction": "在繁體中文中使用 vaxxed.as"
+    "callToAction": "在繁體中文中使用 vaxxed.as",
+    "isRTL": false
   }
 ]

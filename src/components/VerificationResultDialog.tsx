@@ -111,7 +111,9 @@ const VerificationResultDialog = () => {
               >
                 <div className="relative w-full p-3 text-gray-50 dark:text-gray-100">
                   <h2 className="mt-2 text-6xl font-extrabold text-center uppercase">
-                    {success && status === "success" ? "yes" : "\u00A0"}
+                    {success && status === "success"
+                      ? translate("verificationDialog.yes")
+                      : "\u00A0"}
                   </h2>
                 </div>
                 <div className="w-full">

@@ -10,6 +10,7 @@ type LanguageOption = {
   value: string;
   name: string;
   callToAction: string;
+  isRTL: boolean;
 };
 
 const languageOptions: LanguageOption[] = languages;
@@ -62,47 +63,56 @@ const LanguageSelector = () => {
             show={open}
           >
             <Listbox.Options className="absolute z-50 mt-2 overflow-hidden overflow-y-auto bg-white divide-y divide-gray-200 rounded-md shadow-lg ends-0 origin-top-ends w-72 ring-1 ring-black ring-opacity-5 focus:outline-none max-h-96">
-              {languageOptions.map(({ value, name, callToAction }) => (
-                <Listbox.Option
-                  key={value}
-                  className={({ active }) =>
-                    classNames(
-                      active ? "text-white bg-indigo-500" : "text-gray-900",
-                      "cursor-default select-none relative p-4 text-sm"
-                    )
-                  }
-                  value={value}
-                >
-                  {({ selected, active }) => (
-                    <div className="flex flex-col">
-                      <div className="flex justify-between">
-                        <p
-                          className={selected ? "font-semibold" : "font-normal"}
-                        >
-                          {name}
-                        </p>
-                        {selected ? (
-                          <span
-                            className={
-                              active ? "text-white" : "text-indigo-500"
-                            }
+              {languageOptions.map(({ value, name, callToAction, isRTL }) => {
+                return (
+                  <Listbox.Option
+                    key={value}
+                    className={({ active }) =>
+                      classNames(
+                        active ? "text-white bg-indigo-500" : "text-gray-900",
+                        "cursor-default select-none relative p-4 text-sm"
+                      )
+                    }
+                    value={value}
+                  >
+                    {({ selected, active }) => (
+                      <div className="flex flex-col">
+                        <div className="flex justify-between">
+                          <p
+                            className={classNames(
+                              selected ? "font-semibold" : "font-normal",
+                              isRTL ? "text-right" : "text-left"
+                            )}
                           >
-                            <CheckIcon aria-hidden="true" className="w-5 h-5" />
-                          </span>
-                        ) : null}
+                            {name}
+                          </p>
+                          {selected ? (
+                            <span
+                              className={
+                                active ? "text-white" : "text-indigo-500"
+                              }
+                            >
+                              <CheckIcon
+                                aria-hidden="true"
+                                className="w-5 h-5"
+                              />
+                            </span>
+                          ) : null}
+                        </div>
+                        <p
+                          className={classNames(
+                            active ? "text-indigo-200" : "text-gray-500",
+                            isRTL ? "text-right" : "text-left",
+                            "mt-2"
+                          )}
+                        >
+                          {callToAction}
+                        </p>
                       </div>
-                      <p
-                        className={classNames(
-                          active ? "text-indigo-200" : "text-gray-500",
-                          "mt-2"
-                        )}
-                      >
-                        {callToAction}
-                      </p>
-                    </div>
-                  )}
-                </Listbox.Option>
-              ))}
+                    )}
+                  </Listbox.Option>
+                );
+              })}
             </Listbox.Options>
           </Transition>
         </div>
