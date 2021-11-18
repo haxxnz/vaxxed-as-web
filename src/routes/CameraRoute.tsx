@@ -66,7 +66,7 @@ const CameraRoute = () => {
             <p className="leading-tight">
               Site created by{" "}
               <a
-                className="text-blue-500"
+                className="text-sky-500"
                 href="https://contrer.as"
                 rel="noopener noreferrer"
               >

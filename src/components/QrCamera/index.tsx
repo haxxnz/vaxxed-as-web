@@ -251,7 +251,7 @@ const QrCamera = () => {
               }}
             >
               <div>
-                <ViewFinder className="w-full h-full text-blue-400 animate-pulse" />
+                <ViewFinder className="w-full h-full text-sky-400 animate-pulse" />
               </div>
             </div>
           )}

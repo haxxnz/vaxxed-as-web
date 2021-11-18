@@ -1,10 +1,12 @@
 {
   "languages": [
     "ar",
+    "de",
     "en",
     "es",
     "hi",
     "mi",
+    "nl",
     "ru",
     "sm",
     "zh-cn",
@@ -17,6 +19,13 @@
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/ar/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "de",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/de/"
     },
     {
       "description": "Scan your NZ COVID pass",
@@ -38,6 +47,13 @@
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/mi/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "nl",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/nl/"
     },
     {
       "description": "Scan your NZ COVID pass",
@@ -70,9 +86,11 @@
   ],
   "precachePages": [
     "/ar/",
+    "/de/",
     "/es/",
     "/hi/",
     "/mi/",
+    "/nl/",
     "/ru/",
     "/sm/",
     "/zh-cn/",
