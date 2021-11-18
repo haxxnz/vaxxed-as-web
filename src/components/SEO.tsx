@@ -1,6 +1,16 @@
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { useLocation } from "@reach/router";
+import languages from "../data/languageOptions.json";
+
+type LanguageOption = {
+  value: string;
+  name: string;
+  callToAction: string;
+  isRTL: boolean;
+};
+
+const languageOptions: LanguageOption[] = languages;
 
 const rtlLanguages = ["ar", "fa", "he", "ps", "ur", "sd"];
 
@@ -25,6 +35,17 @@ const SEO = (): JSX.Element => {
         name="description"
       />
       <title>vaxxed.as | {translate("header.Scan your NZ COVIDpass")}</title>
+      {languageOptions
+        .filter(({ value }) => value !== languageName)
+        .map(({ value, callToAction }) => (
+          <link
+            key={value}
+            href={`https://vaxxed.as/${value === "en" ? "" : `${value}/`}`}
+            hrefLang={value}
+            rel="alternate"
+            title={callToAction}
+          />
+        ))}
       <meta content="website" property="og:type" />
       <meta content="https://vaxxed.as" property="og:url" />
       <meta
