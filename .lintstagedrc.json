@@ -1,0 +1,7 @@
+{
+  "**/*.{js,ts,css,json,md,html,yml,yaml,pcss,jsx,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "package.json": ["yarn lint:package"]
+}

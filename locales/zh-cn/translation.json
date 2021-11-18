@@ -1,0 +1,30 @@
+{
+  "footer": {
+    "disclaimer": "這不是官方的政府網站。 有關 COVIDpass 的更多信息，請訪問 https://nzcp.covid19.health.nz",
+    "privacy": "扫描结果不会共享给任何实体；私人、公共或政府实体。本网站没有添加任何追踪信息，如果您发现任何问题，请发送电子邮件至 vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "改变语言",
+    "Scan your NZ COVIDpass": "扫描你的新西兰 CovidPass"
+  },
+  "invalidCodes": {
+    "expired": "抱歉，您的 COVID pass 好像已過期。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
+    "invalid": "抱歉，我們無法驗證您的 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
+    "notAcovidPass": "抱歉，這看起來不是 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "使用 vaxxed.as 简体中文",
+    "name": "简体中文"
+  },
+  "verificationDialog": {
+    "Attention needed": "需要注意",
+    "Close": "关闭",
+    "Copy results": "复制结果",
+    "Date of birth": "出生日期",
+    "First name": "名字",
+    "Last name": "姓氏",
+    "Verification results": "验证结果",
+    "View details": "查看详情",
+    "onlyForVerificationPurposes": "请仅将结果用于验证目的。尊重每个人的隐私是一件好事。"
+  }
+}

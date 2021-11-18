@@ -1,0 +1,15 @@
+diff --git a/node_modules/gatsby-plugin-webpack-bundle-analyser-v2/gatsby-node.js b/node_modules/gatsby-plugin-webpack-bundle-analyser-v2/gatsby-node.js
+index 9ca4371..75ac693 100644
+--- a/node_modules/gatsby-plugin-webpack-bundle-analyser-v2/gatsby-node.js
++++ b/node_modules/gatsby-plugin-webpack-bundle-analyser-v2/gatsby-node.js
+@@ -1,8 +1,7 @@
+ "use strict";
+ 
+-const {
+-  BundleAnalyzerPlugin
+-} = require('webpack-bundle-analyzer');
++const BundleAnalyzerPlugin =
++  require("webpack-bundle-analyzer-brotli").BundleAnalyzerPlugin;
+ 
+ exports.onCreateWebpackConfig = ({
+   stage,

@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "as.vaxxed.twa",
+                     "sha256_cert_fingerprints": ["A9:1D:AE:02:D5:A6:5B:97:D0:39:DE:61:E5:B0:C5:3E:D4:C2:F9:8E:0D:4B:71:68:E2:03:29:57:6C:3E:F5:ED"] }
+      }
+]

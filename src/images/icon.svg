@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 500 500">
+    <path fill="#FFF" d="M0 0h500v500H0z"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round" d="M249.886 67.794V90.57"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#FFC500" stroke-linejoin="round" stroke-linecap="round" d="M386.54 341.103h45.552"/>
+    <path d="M295.438 341.103h-45.552v91.103" fill="none" vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#FFC500" stroke-linejoin="round" stroke-linecap="round" d="M249.886 181.673V250"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#000" stroke-linejoin="round" stroke-linecap="round" d="M249.886 250h.228"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#FFC500" stroke-linejoin="round" stroke-linecap="round" d="M249.886 250h91.331"/>
+    <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round" d="M340.989 432.206h91.103M67.68 250h91.103M432.092 250h.228"/>
+    <path d="M90.456 158.897H136.008c12.578 0 22.775-10.197 22.775-22.776V90.57c0-12.579-10.197-22.776-22.775-22.776H90.456c-12.578 0-22.776 10.197-22.776 22.776v45.551c0 12.579 10.198 22.776 22.776 22.776Z" fill="none" vector-effect="non-scaling-stroke" stroke-width="60" stroke="#FFC500" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M363.765 158.897h45.551c12.579 0 22.776-10.197 22.776-22.776V90.57c0-12.579-10.197-22.776-22.776-22.776h-45.551c-12.579 0-22.776 10.197-22.776 22.776v45.551c0 12.579 10.197 22.776 22.776 22.776ZM90.456 432.206h45.552c12.578 0 22.775-10.197 22.775-22.776v-45.551c0-12.579-10.197-22.776-22.775-22.776H90.456c-12.578 0-22.776 10.197-22.776 22.776v45.551c0 12.579 10.198 22.776 22.776 22.776Z" fill="none" vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

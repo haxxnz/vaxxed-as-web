@@ -1,0 +1,27 @@
+{
+  "download": {
+    "includeSourceLang": true,
+    "files": "locales/${lang_to_lowercase}/translation.json",
+    "langAliases": {
+      "zh-Hans-CN": "zh-cn",
+      "zh-Hant-HK": "zh-hk"
+    }
+  },
+  "transformations": [
+    {
+      "name": "lang_to_lowercase",
+      "source": "${lang}",
+      "operations": "lowerCase"
+    }
+  ],
+  "upload": {
+    "deprecateMissing": true,
+    "type": "json",
+    "files": [
+      {
+        "pattern": "locales/en/translation.json",
+        "lang": "en"
+      }
+    ]
+  }
+}

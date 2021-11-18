@@ -1,0 +1,12 @@
+.cache/*
+.github/workflows/*
+build/*
+dist/*
+compress/*
+public/*
+node_modules/*
+static/*
+gatsby-*.js
+tailwind.config.js
+src/html.js
+tailwind.css

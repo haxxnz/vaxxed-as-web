@@ -1,0 +1,81 @@
+{
+  "languages": [
+    "ar",
+    "en",
+    "es",
+    "hi",
+    "mi",
+    "ru",
+    "sm",
+    "zh-cn",
+    "zh-hk"
+  ],
+  "localize": [
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "ar",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/ar/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "es",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/es/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "hi",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/hi/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "mi",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/mi/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "ru",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/ru/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "sm",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/sm/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "zh-cn",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/zh-cn/"
+    },
+    {
+      "description": "Scan your NZ COVID pass",
+      "lang": "zh-hk",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/zh-hk/"
+    }
+  ],
+  "precachePages": [
+    "/ar/",
+    "/es/",
+    "/hi/",
+    "/mi/",
+    "/ru/",
+    "/sm/",
+    "/zh-cn/",
+    "/zh-hk/"
+  ]
+}

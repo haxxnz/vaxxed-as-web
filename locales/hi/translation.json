@@ -1,0 +1,30 @@
+{
+  "footer": {
+    "disclaimer": "यह एक आधिकारिक सरकारी वेबसाइट नहीं है। COVIDpass के बारे में अधिक जानकारी के लिए, कृपया https://nzcp.covid19.health.nz . पर जाएं",
+    "privacy": "स्कैन के परिणाम किसी भी इकाई; निजी, सार्वजनिक या सरकारी को साझा नहीं किए जाते हैं। इस साइट पर जो भी ट्रैकिंग नहीं जोड़ी गई है, अगर आपको कोई समस्या मिलती है, तो कृपया vaxxed@contrer.as पर ईमेल करें"
+  },
+  "header": {
+    "Change language": "भाषा बदलें",
+    "Scan your NZ COVIDpass": "अपने NZ COVIDPass को स्कैन करें"
+  },
+  "invalidCodes": {
+    "expired": "抱歉，您的 COVIDpass 好像已過期。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
+    "invalid": "क्षमा करें, हम आपके COVIDpass की पुष्टि नहीं कर सके। कृपया [स्वास्थ्य मंत्रालय] से संपर्क करें (Ministry of Health)]({{link}})",
+    "notAcovidPass": "क्षमा करें, यह कोई COVIDpass नहीं लगता। कृपया [स्वास्थ्य मंत्रालय] से संपर्क करें (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",
+    "name": "अंग्रेज़ी"
+  },
+  "verificationDialog": {
+    "Attention needed": "ध्यान देने की आवश्यकता है",
+    "Close": "बंद करें",
+    "Copy results": "परिणाम नक़ल करें",
+    "Date of birth": "जन्मतिथि",
+    "First name": "पहला नाम",
+    "Last name": "अंतिम नाम",
+    "Verification results": "सत्यापन के परिणाम",
+    "View details": "विवरण देखें",
+    "onlyForVerificationPurposes": "कृपया परिणामों का उपयोग केवल सत्यापन उद्देश्यों के लिए करें। हर किसी की निजता का सम्मान करना अच्छी बात है।"
+  }
+}

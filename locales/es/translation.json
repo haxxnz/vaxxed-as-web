@@ -1,0 +1,30 @@
+{
+  "footer": {
+    "disclaimer": "Este no es un sitio web oficial del gobierno. Para obtener más información sobre el COVIDpass, visite https://nzcp.covid19.health.nz",
+    "privacy": "Los resultados de los análisis no se comparten con ninguna entidad; privada, pública o gubernamental. No se ha agregado ningún tipo de tracking a este sitio, si encuentra algún problema, envíe un correo electrónico a vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Cambiar idioma",
+    "Scan your NZ COVIDpass": "Escanea tu NZ COVIDPass"
+  },
+  "invalidCodes": {
+    "expired": "Lo sentimos, parece que su COVIDpass ha caducado. Por favor póngase en contacto con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+    "invalid": "Lo sentimos, no pudimos verificar su COVIDpass. Por favor póngase en contacto con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Lo sentimos, esto no parece ser un COVIDpass. Por favor póngase en contacto con el [Ministerio de Salud (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Utilice vaxxed.as en Español",
+    "name": "Español"
+  },
+  "verificationDialog": {
+    "Attention needed": "Atención necesaria",
+    "Close": "Cerrar",
+    "Copy results": "Copiar resultados",
+    "Date of birth": "Fecha de cumpleaños",
+    "First name": "Primer nombre",
+    "Last name": "Apellido",
+    "Verification results": "Resultados de la verificación",
+    "View details": "Ver detalles",
+    "onlyForVerificationPurposes": "Utilice los resultados únicamente para fines de verificación. Es bueno respetar la privacidad de todos."
+  }
+}

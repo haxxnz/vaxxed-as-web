@@ -1,0 +1,66 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console",
+        "transform-remove-debugger",
+        "transform-react-remove-prop-types",
+        "babel-plugin-transform-react-class-to-function",
+        "transform-imports"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": false
+      }
+    ],
+    "@babel/plugin-syntax-dynamic-import",
+    "babel-plugin-macros",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": true,
+        "regenerator": true
+      }
+    ],
+    "babel-plugin-classnames",
+    [
+      "@babel/plugin-proposal-private-methods",
+      {
+        "loose": false
+      }
+    ],
+    [
+      "@babel/plugin-proposal-private-property-in-object",
+      {
+        "loose": false
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [">1%", "not IE 11", "not dead", "not op_mini all"]
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ]
+}

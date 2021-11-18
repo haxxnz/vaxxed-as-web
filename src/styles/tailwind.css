@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* purgecss start ignore */
+
+[dir="ltr"] .text-starts {
+  text-align: left;
+}
+
+[dir="rtl"] .text-starts {
+  text-align: right;
+}
+
+[dir="ltr"] .origin-top-ends {
+  transform-origin: top right;
+}
+
+[dir="rtl"] .origin-top-ends {
+  transform-origin: top left;
+}
+
+[dir="ltr"] .ends-0 {
+  right: 0;
+}
+
+[dir="rtl"] .ends-0 {
+  left: 0px;
+}
+
+.space-start-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-start-reverse: 0;
+  margin-inline-end: calc(0.625rem * var(--tw-space-start-reverse));
+  margin-inline-start: calc(0.625rem * calc(1 - var(--tw-space-start-reverse)));
+}
+
+.space-start-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-start-reverse: 0;
+  margin-inline-end: calc(0.75rem * var(--tw-space-start-reverse));
+  margin-inline-start: calc(0.75rem * calc(1 - var(--tw-space-start-reverse)));
+}
+
+.-ms-4 {
+  -webkit-margin-start: -1rem;
+  margin-inline-start: -1rem;
+}
+
+.pends-8 {
+  -webkit-padding-end: 2rem;
+  padding-inline-end: 2rem;
+}
+
+.stripped-background {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #ffc500,
+    #ffc500 80px,
+    transparent 80px,
+    transparent 160px
+  );
+}
+
+.fireworks {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.fireworks > .before,
+.fireworks > .after {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff;
+  animation: 1s bang ease-out infinite backwards,
+    1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+.fireworks > .after {
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+@keyframes bang {
+  to {
+    box-shadow: 245px -216.6666666667px #bbff00, 195px -123.6666666667px #ff5e00,
+      168px 4.3333333333px #00ff37, 203px -362.6666666667px #00ff26,
+      183px -197.6666666667px #ff1a00, 189px -54.6666666667px #005eff,
+      200px 20.3333333333px #0037ff, 12px -400.6666666667px #002bff,
+      -39px -187.6666666667px #00ff1a, 242px -74.6666666667px #009dff,
+      63px -62.6666666667px #00ff40, -180px -233.6666666667px #ff4000,
+      -242px -317.6666666667px #00ffd0, 69px 43.3333333333px #ff8400,
+      64px -89.6666666667px #ff00bb, 52px -325.6666666667px #ff0d00,
+      53px -297.6666666667px #4800ff, 116px -283.6666666667px #0059ff,
+      50px -103.6666666667px #5100ff, -129px -247.6666666667px #6f00ff,
+      -112px 35.3333333333px #d0ff00, -133px -372.6666666667px #00aeff,
+      -119px 61.3333333333px #ee00ff, 112px 43.3333333333px #00c4ff,
+      -178px -415.6666666667px #ff9900, 170px -20.6666666667px #8c00ff,
+      -97px -126.6666666667px #0099ff, 233px -89.6666666667px #2fff00,
+      236px -351.6666666667px #00ff7b, -26px 31.3333333333px #ff00b3,
+      -29px -137.6666666667px #ffea00, 153px -33.6666666667px #ff00bf,
+      66px -402.6666666667px #6aff00, 70px -113.6666666667px #ff00f7,
+      -83px -299.6666666667px #c4ff00, -51px -209.6666666667px #ff3700,
+      -202px 56.3333333333px #ffa200, -174px -182.6666666667px #00ffdd,
+      -186px -162.6666666667px #0091ff, 201px -84.6666666667px #5100ff,
+      127px -172.6666666667px #ffbb00, 230px 23.3333333333px #ffe100,
+      191px -44.6666666667px #006fff, -175px -114.6666666667px #00d0ff,
+      -27px -294.6666666667px #00ffbf, 203px -122.6666666667px #00ddff,
+      -99px -172.6666666667px #00ff37, -170px -414.6666666667px #4000ff,
+      -74px -97.6666666667px #00ffa2, 110px -350.6666666667px #ff0033,
+      229px -223.6666666667px #ff0095;
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: 245px -216.6666666667px #bbff00, 195px -123.6666666667px #ff5e00,
+      168px 4.3333333333px #00ff37, 203px -362.6666666667px #00ff26,
+      183px -197.6666666667px #ff1a00, 189px -54.6666666667px #005eff,
+      200px 20.3333333333px #0037ff, 12px -400.6666666667px #002bff,
+      -39px -187.6666666667px #00ff1a, 242px -74.6666666667px #009dff,
+      63px -62.6666666667px #00ff40, -180px -233.6666666667px #ff4000,
+      -242px -317.6666666667px #00ffd0, 69px 43.3333333333px #ff8400,
+      64px -89.6666666667px #ff00bb, 52px -325.6666666667px #ff0d00,
+      53px -297.6666666667px #4800ff, 116px -283.6666666667px #0059ff,
+      50px -103.6666666667px #5100ff, -129px -247.6666666667px #6f00ff,
+      -112px 35.3333333333px #d0ff00, -133px -372.6666666667px #00aeff,
+      -119px 61.3333333333px #ee00ff, 112px 43.3333333333px #00c4ff,
+      -178px -415.6666666667px #ff9900, 170px -20.6666666667px #8c00ff,
+      -97px -126.6666666667px #0099ff, 233px -89.6666666667px #2fff00,
+      236px -351.6666666667px #00ff7b, -26px 31.3333333333px #ff00b3,
+      -29px -137.6666666667px #ffea00, 153px -33.6666666667px #ff00bf,
+      66px -402.6666666667px #6aff00, 70px -113.6666666667px #ff00f7,
+      -83px -299.6666666667px #c4ff00, -51px -209.6666666667px #ff3700,
+      -202px 56.3333333333px #ffa200, -174px -182.6666666667px #00ffdd,
+      -186px -162.6666666667px #0091ff, 201px -84.6666666667px #5100ff,
+      127px -172.6666666667px #ffbb00, 230px 23.3333333333px #ffe100,
+      191px -44.6666666667px #006fff, -175px -114.6666666667px #00d0ff,
+      -27px -294.6666666667px #00ffbf, 203px -122.6666666667px #00ddff,
+      -99px -172.6666666667px #00ff37, -170px -414.6666666667px #4000ff,
+      -74px -97.6666666667px #00ffa2, 110px -350.6666666667px #ff0033,
+      229px -223.6666666667px #ff0095;
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: 245px -216.6666666667px #bbff00, 195px -123.6666666667px #ff5e00,
+      168px 4.3333333333px #00ff37, 203px -362.6666666667px #00ff26,
+      183px -197.6666666667px #ff1a00, 189px -54.6666666667px #005eff,
+      200px 20.3333333333px #0037ff, 12px -400.6666666667px #002bff,
+      -39px -187.6666666667px #00ff1a, 242px -74.6666666667px #009dff,
+      63px -62.6666666667px #00ff40, -180px -233.6666666667px #ff4000,
+      -242px -317.6666666667px #00ffd0, 69px 43.3333333333px #ff8400,
+      64px -89.6666666667px #ff00bb, 52px -325.6666666667px #ff0d00,
+      53px -297.6666666667px #4800ff, 116px -283.6666666667px #0059ff,
+      50px -103.6666666667px #5100ff, -129px -247.6666666667px #6f00ff,
+      -112px 35.3333333333px #d0ff00, -133px -372.6666666667px #00aeff,
+      -119px 61.3333333333px #ee00ff, 112px 43.3333333333px #00c4ff,
+      -178px -415.6666666667px #ff9900, 170px -20.6666666667px #8c00ff,
+      -97px -126.6666666667px #0099ff, 233px -89.6666666667px #2fff00,
+      236px -351.6666666667px #00ff7b, -26px 31.3333333333px #ff00b3,
+      -29px -137.6666666667px #ffea00, 153px -33.6666666667px #ff00bf,
+      66px -402.6666666667px #6aff00, 70px -113.6666666667px #ff00f7,
+      -83px -299.6666666667px #c4ff00, -51px -209.6666666667px #ff3700,
+      -202px 56.3333333333px #ffa200, -174px -182.6666666667px #00ffdd,
+      -186px -162.6666666667px #0091ff, 201px -84.6666666667px #5100ff,
+      127px -172.6666666667px #ffbb00, 230px 23.3333333333px #ffe100,
+      191px -44.6666666667px #006fff, -175px -114.6666666667px #00d0ff,
+      -27px -294.6666666667px #00ffbf, 203px -122.6666666667px #00ddff,
+      -99px -172.6666666667px #00ff37, -170px -414.6666666667px #4000ff,
+      -74px -97.6666666667px #00ffa2, 110px -350.6666666667px #ff0033,
+      229px -223.6666666667px #ff0095;
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: 245px -216.6666666667px #bbff00, 195px -123.6666666667px #ff5e00,
+      168px 4.3333333333px #00ff37, 203px -362.6666666667px #00ff26,
+      183px -197.6666666667px #ff1a00, 189px -54.6666666667px #005eff,
+      200px 20.3333333333px #0037ff, 12px -400.6666666667px #002bff,
+      -39px -187.6666666667px #00ff1a, 242px -74.6666666667px #009dff,
+      63px -62.6666666667px #00ff40, -180px -233.6666666667px #ff4000,
+      -242px -317.6666666667px #00ffd0, 69px 43.3333333333px #ff8400,
+      64px -89.6666666667px #ff00bb, 52px -325.6666666667px #ff0d00,
+      53px -297.6666666667px #4800ff, 116px -283.6666666667px #0059ff,
+      50px -103.6666666667px #5100ff, -129px -247.6666666667px #6f00ff,
+      -112px 35.3333333333px #d0ff00, -133px -372.6666666667px #00aeff,
+      -119px 61.3333333333px #ee00ff, 112px 43.3333333333px #00c4ff,
+      -178px -415.6666666667px #ff9900, 170px -20.6666666667px #8c00ff,
+      -97px -126.6666666667px #0099ff, 233px -89.6666666667px #2fff00,
+      236px -351.6666666667px #00ff7b, -26px 31.3333333333px #ff00b3,
+      -29px -137.6666666667px #ffea00, 153px -33.6666666667px #ff00bf,
+      66px -402.6666666667px #6aff00, 70px -113.6666666667px #ff00f7,
+      -83px -299.6666666667px #c4ff00, -51px -209.6666666667px #ff3700,
+      -202px 56.3333333333px #ffa200, -174px -182.6666666667px #00ffdd,
+      -186px -162.6666666667px #0091ff, 201px -84.6666666667px #5100ff,
+      127px -172.6666666667px #ffbb00, 230px 23.3333333333px #ffe100,
+      191px -44.6666666667px #006fff, -175px -114.6666666667px #00d0ff,
+      -27px -294.6666666667px #00ffbf, 203px -122.6666666667px #00ddff,
+      -99px -172.6666666667px #00ff37, -170px -414.6666666667px #4000ff,
+      -74px -97.6666666667px #00ffa2, 110px -350.6666666667px #ff0033,
+      229px -223.6666666667px #ff0095;
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: 245px -216.6666666667px #bbff00, 195px -123.6666666667px #ff5e00,
+      168px 4.3333333333px #00ff37, 203px -362.6666666667px #00ff26,
+      183px -197.6666666667px #ff1a00, 189px -54.6666666667px #005eff,
+      200px 20.3333333333px #0037ff, 12px -400.6666666667px #002bff,
+      -39px -187.6666666667px #00ff1a, 242px -74.6666666667px #009dff,
+      63px -62.6666666667px #00ff40, -180px -233.6666666667px #ff4000,
+      -242px -317.6666666667px #00ffd0, 69px 43.3333333333px #ff8400,
+      64px -89.6666666667px #ff00bb, 52px -325.6666666667px #ff0d00,
+      53px -297.6666666667px #4800ff, 116px -283.6666666667px #0059ff,
+      50px -103.6666666667px #5100ff, -129px -247.6666666667px #6f00ff,
+      -112px 35.3333333333px #d0ff00, -133px -372.6666666667px #00aeff,
+      -119px 61.3333333333px #ee00ff, 112px 43.3333333333px #00c4ff,
+      -178px -415.6666666667px #ff9900, 170px -20.6666666667px #8c00ff,
+      -97px -126.6666666667px #0099ff, 233px -89.6666666667px #2fff00,
+      236px -351.6666666667px #00ff7b, -26px 31.3333333333px #ff00b3,
+      -29px -137.6666666667px #ffea00, 153px -33.6666666667px #ff00bf,
+      66px -402.6666666667px #6aff00, 70px -113.6666666667px #ff00f7,
+      -83px -299.6666666667px #c4ff00, -51px -209.6666666667px #ff3700,
+      -202px 56.3333333333px #ffa200, -174px -182.6666666667px #00ffdd,
+      -186px -162.6666666667px #0091ff, 201px -84.6666666667px #5100ff,
+      127px -172.6666666667px #ffbb00, 230px 23.3333333333px #ffe100,
+      191px -44.6666666667px #006fff, -175px -114.6666666667px #00d0ff,
+      -27px -294.6666666667px #00ffbf, 203px -122.6666666667px #00ddff,
+      -99px -172.6666666667px #00ff37, -170px -414.6666666667px #4000ff,
+      -74px -97.6666666667px #00ffa2, 110px -350.6666666667px #ff0033,
+      229px -223.6666666667px #ff0095;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes position {
+  0%,
+  19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%,
+  39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%,
+  59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%,
+  79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%,
+  99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%,
+  19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%,
+  39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%,
+  59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%,
+  79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%,
+  99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%,
+  19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%,
+  39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%,
+  59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%,
+  79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%,
+  99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%,
+  19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%,
+  39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%,
+  59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%,
+  79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%,
+  99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%,
+  19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%,
+  39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%,
+  59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%,
+  79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%,
+  99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/baloo/baloo-2-v2-latin-regular.woff2") format("woff2"),
+    url("../fonts/baloo/baloo-2-v2-latin-regular.woff") format("woff"),
+    url("../fonts/baloo/baloo-2-v2-latin-regular.ttf") format("truetype");
+}
+
+/* purgecss end ignore */

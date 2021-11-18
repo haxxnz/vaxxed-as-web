@@ -1,0 +1,30 @@
+{
+  "footer": {
+    "disclaimer": "Это не официальный сайт правительства. Для получения дополнительной информации о COVIDPass перейдите по ссылке https://nzcp.covid19.health.nz",
+    "privacy": "Результаты сканирования не передаются ни одной организации — частной, государственной или государственной. Отслеживание на этом сайте не было добавлено, если вы обнаружите какие-либо проблемы, напишите по адресу vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Изменить язык",
+    "Scan your NZ COVIDpass": "Отсканируйте свой NZ COVIDPass"
+  },
+  "invalidCodes": {
+    "expired": "Извините, похоже, у вас истек срок действия CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})",
+    "invalid": "К сожалению, нам не удалось проверить ваш CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Извините, похоже, это не CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Использовать vaxxed.as на русском",
+    "name": "Русский"
+  },
+  "verificationDialog": {
+    "Attention needed": "Требуется внимание",
+    "Close": "Закрыть",
+    "Copy results": "Копировать результаты",
+    "Date of birth": "Дата рождения",
+    "First name": "Имя",
+    "Last name": "Фамилия",
+    "Verification results": "Результаты проверки",
+    "View details": "Подробнее",
+    "onlyForVerificationPurposes": "Полученные результаты можно использовать только для проверки. Хорошо уважать неприкосновенность частной жизни каждого."
+  }
+}

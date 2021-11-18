@@ -1,0 +1,30 @@
+{
+  "footer": {
+    "disclaimer": "Ehara tenei i te paetukutuku mana a te Kawanatanga. Mo etahi atu korero mo te COVIDpass, haere ki https://nzcp.covid19.health.nz",
+    "privacy": "Ko nga hua o nga karapa kaore e tohatohahia ki tetahi hinonga; tūmataiti, tūmatanui, kāwanatanga ranei. Karekau he whainga kua taapirihia ki tenei papaanga, mena ka kitea e koe etahi take, tena koa imeera vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Huri reo",
+    "Scan your NZ COVIDpass": "Matawai i to NZ COVIDpass"
+  },
+  "invalidCodes": {
+    "expired": "Aroha mai, te ahua nei kua pau to COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})",
+    "invalid": "Aroha mai, kaore i taea e matou te manatoko i to urunga COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Aroha mai, ehara tenei i te COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Whakamahia te vaxxed.as i te reo Māori",
+    "name": "Te reo Māori"
+  },
+  "verificationDialog": {
+    "Attention needed": "Me aro",
+    "Close": "Katia",
+    "Copy results": "Tārua ngā hua",
+    "Date of birth": "Te ra whanau",
+    "First name": "Ingoa tuatahi",
+    "Last name": "Ingoa whakamutunga",
+    "Verification results": "Nga hua manatoko",
+    "View details": "Tirohia nga taipitopito",
+    "onlyForVerificationPurposes": "Tena koa whakamahia nga hua mo nga kaupapa manatoko anake. He mea pai ki te whakaute i te noho muna o te katoa."
+  }
+}
