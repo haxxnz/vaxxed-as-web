@@ -64,7 +64,7 @@ const VerificationResultDialog = () => {
       the dialog will show again on fast
       devices.
     */
-    await new Promise(resolve => setTimeout(() => resolve(true), 2000));
+    // await new Promise(resolve => setTimeout(() => resolve(true), 2000));
     uiStore.resetVerificationStatus();
   };
 
