@@ -47,7 +47,7 @@ const CameraRoute = () => {
           </div>
         </div>
         <footer className="flex justify-center w-full p-4 md:max-w-3xl md:p-0">
-          <article className="prose text-gray-300 dark:text-gray-400">
+          <article className="prose text-gray-500 dark:text-gray-300">
             <p className="leading-tight">
               <Trans i18nKey="footer.disclaimer">
                 This is not an official Government website. For more information
@@ -63,7 +63,8 @@ const CameraRoute = () => {
                 vaxxed@contrer.as
               </Trans>
             </p>
-            <p className="leading-tight">
+            <hr />
+            <p className="text-sm leading-tight">
               Site created by{" "}
               <a
                 className="text-sky-500"
@@ -72,7 +73,22 @@ const CameraRoute = () => {
               >
                 Rafael Contreras
               </a>
-              . Source code at https://github.com/rafcontreras/vaxxed-as
+              as a member of the
+              <a
+                className="text-sky-500"
+                href="https://github.com/vaxxnz"
+                rel="noopener noreferrer"
+              >
+                Vaxx.nz collective
+              </a>
+              . Source code at{" "}
+              <a
+                className="text-sky-500"
+                href="https://github.com/vaxxnz/vaxxed-as-web"
+                rel="noopener noreferrer"
+              >
+                https://github.com/vaxxnz/vaxxed-as-web
+              </a>
             </p>
           </article>
         </footer>
