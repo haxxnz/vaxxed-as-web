@@ -54,9 +54,17 @@ const VerificationResultDialog = () => {
     setIsVisible(!isVisible);
   };
 
-  const closeDialog = () => {
+  const closeDialog = async () => {
     setIsFlipped(false);
     setIsVisible(true);
+
+    /*
+      Wait a couple of seconds to restart
+      the verification process otherwise
+      the dialog will show again on fast
+      devices.
+    */
+    await new Promise(resolve => setTimeout(() => resolve(true), 2000));
     uiStore.resetVerificationStatus();
   };
 
