@@ -1,8 +1,8 @@
 [
   {
     "value": "ar",
-    "name": "الإنجليزية",
-    "callToAction": "استخدم vaxxed.as باللغة الإنجليزية",
+    "name": "عربي",
+    "callToAction": "باللغة العربية vaxxed.as استخدم",
     "isRTL": true,
     "changeLanguage": "غير اللغة"
   },
@@ -26,6 +26,13 @@
     "callToAction": "Utilice vaxxed.as en Español",
     "isRTL": false,
     "changeLanguage": "Cambiar idioma"
+  },
+  {
+    "value": "fa",
+    "name": "فارسی",
+    "callToAction": "استفاده از vaxxed.asبه زبان فارسی",
+    "isRTL": true,
+    "changeLanguage": "تغییر زبان"
   },
   {
     "value": "hi",

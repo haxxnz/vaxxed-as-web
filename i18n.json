@@ -4,6 +4,7 @@
     "de",
     "en",
     "es",
+    "fa",
     "hi",
     "mi",
     "nl",
@@ -36,6 +37,14 @@
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/es/"
+    },
+    {
+      "description": "CovidPass خود را اسکن نمایید. ",
+      "dir": "rtl",
+      "lang": "fa",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/fa/"
     },
     {
       "description": "अपने NZ COVIDPass को स्कैन करें",
@@ -98,6 +107,7 @@
     "/ar/",
     "/de/",
     "/es/",
+    "/fa/",
     "/hi/",
     "/mi/",
     "/nl/",

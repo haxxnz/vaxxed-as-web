@@ -18,7 +18,7 @@ const CameraRoute = () => {
   return (
     <Fragment>
       <SEO />
-      <main className="relative flex flex-col items-center justify-center min-h-screen px-0 space-y-4 bg-gray-500 dark:bg-gray-700 sm:px-8 sm:py-8">
+      <main className="relative flex flex-col items-center justify-center min-h-screen px-0 space-y-6 bg-gray-500 dark:bg-gray-700 sm:px-8 sm:py-8">
         <div className="z-10 flex flex-col w-full h-screen space-y-3 overflow-y-scroll bg-gray-600 shadow-2xl sm:bg-white sm:dark:bg-gray-600 sm:h-auto md:max-w-3xl sm:rounded-3xl">
           <div className="flex items-center justify-between object-cover w-full p-2 bg-white bg-center shadow-lg space-start-2 rounded-b-3xl stripped-background dark:bg-gray-50">
             <Link
@@ -47,7 +47,7 @@ const CameraRoute = () => {
           </div>
         </div>
         <footer className="flex justify-center w-full p-4 md:max-w-3xl md:p-0">
-          <article className="prose text-gray-500 dark:text-gray-300">
+          <article className="space-y-4 text-gray-100 dark:text-gray-400">
             <p className="leading-tight">
               <Trans i18nKey="footer.disclaimer">
                 This is not an official Government website. For more information
@@ -67,15 +67,15 @@ const CameraRoute = () => {
             <p className="text-sm leading-tight">
               Site created by{" "}
               <a
-                className="text-sky-500"
+                className="text-sky-200 dark:text-sky-500"
                 href="https://contrer.as"
                 rel="noopener noreferrer"
               >
                 Rafael Contreras
-              </a>
-              as a member of the
+              </a>{" "}
+              as a member of the{" "}
               <a
-                className="text-sky-500"
+                className="text-sky-200 dark:text-sky-500"
                 href="https://github.com/vaxxnz"
                 rel="noopener noreferrer"
               >
@@ -83,7 +83,7 @@ const CameraRoute = () => {
               </a>
               . Source code at{" "}
               <a
-                className="text-sky-500"
+                className="text-sky-200 dark:text-sky-500"
                 href="https://github.com/vaxxnz/vaxxed-as-web"
                 rel="noopener noreferrer"
               >
