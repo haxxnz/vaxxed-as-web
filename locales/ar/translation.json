@@ -13,8 +13,8 @@
     "notAcovidPass": "عذرًا، هذا لا يبدو أنه COVIDpass. يرجى الاتصال بـ [وزارة الصحة]({{link}})"
   },
   "thisLanguage": {
-    "callToAction": "استخدم vaxxed.as باللغة الإنجليزية",
-    "name": "الإنجليزية"
+    "callToAction": "باللغة العربية vaxxed.as استخدم",
+    "name": "عربي"
   },
   "verificationDialog": {
     "Attention needed": "يجب الانتباه",

@@ -1,0 +1,31 @@
+{
+  "footer": {
+    "disclaimer": "این یک وب سایت رسمی دولت نیست. برای کسب اطلاعات بیشتر در مورد CovidPass، لطفا به آدرس https://nzcp.covid19.health.nz مراجعه نمایید.",
+    "privacy": "نتایج اسکن‌ها به هیچ نهاد خصوصی، دولتی و یا با عموم به اشتراک گذاشته نمی‌شود. این وبسایت فاقد هرگونه سیستم ردیابی می‌باشد ، در مواجه با هرگونه مشکلی لطفا با نشانی پست الکترونیکی  ذیل ارتباط برقرار فرمایید \nvaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "تغییر زبان",
+    "Scan your NZ COVIDpass": "CovidPass خود را اسکن نمایید. "
+  },
+  "invalidCodes": {
+    "expired": "متاسفانه، COVIDpass  شما منقضی شده است.  لطفا با [وزارت بهداشت] تماس حاصل فرمایید.  ({{link}})",
+    "invalid": "متأسفانه ما قادر به تأیید CovidPass شما نیستیم. لطفا با [وزارت بهداشت] تماس بگیرید ({{link}})",
+    "notAcovidPass": "متاسفانه ،QR کد شما یک COVIDpass نیست.   لطفا با [وزارت بهداشت] تماس بگیرید ({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "استفاده از vaxxed.asبه زبان فارسی",
+    "name": "فارسی"
+  },
+  "verificationDialog": {
+    "Attention needed": "توجه فرمایید ",
+    "Close": "بستن",
+    "Copy results": "کپی نتایج",
+    "Date of birth": "تاریخ تولد",
+    "First name": "نام",
+    "Last name": "نام خانوادگی",
+    "Verification results": "تأیید اعتبار نتایج ",
+    "View details": "مشاهده جزئیات",
+    "onlyForVerificationPurposes": "لطفا نتایج را فقط به منظور اهداف تأیید استفاده نمایید و به حريم خصوصي دیگران احترام بگذارید. ",
+    "yes": "آری"
+  }
+}
