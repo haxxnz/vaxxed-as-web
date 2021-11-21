@@ -1,5 +1,5 @@
 import { observable, action, makeObservable } from "mobx";
-import { VerificationResult } from "../utils/nzcp";
+import { VerificationResult } from "@vaxxnz/nzcp";
 
 export type VerificationPayLoad = {
   verification: VerificationResult;

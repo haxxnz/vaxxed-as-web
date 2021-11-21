@@ -1,5 +1,5 @@
 import jsQR from "jsqr";
-import { verifyPassURIWithTrustedIssuers } from "../utils/nzcp";
+import { verifyPassURIOffline } from "@vaxxnz/nzcp";
 
 type ParseQrcodeProps = { imageData: ImageData; trustedIssuers: string[] };
 
@@ -17,10 +17,9 @@ export const readQRcode = async ({
     const { data } = code;
 
     message.status = "success";
-    const verification = await verifyPassURIWithTrustedIssuers(
-      data,
-      trustedIssuers
-    );
+    const verification = verifyPassURIOffline(data, {
+      trustedIssuer: trustedIssuers
+    });
     message.payload = { verification, raw: data, timestamp: new Date() };
   }
 
