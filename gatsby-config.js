@@ -75,6 +75,14 @@ module.exports = {
     "gatsby-plugin-workerize-loader",
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-robots-txt",
+    {
+      resolve: "gatsby-plugin-fathom",
+      options: {
+        trackingUrl: "vaxxed.as",
+        siteId: "SKMSHBVR",
+        honorDnt: true
+      }
+    },
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
