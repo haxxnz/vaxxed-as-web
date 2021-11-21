@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-fathom",
       options: {
-        trackingUrl: "vaxxed.as",
+        trackingUrl: "cdn.usefathom.com",
         siteId: "SKMSHBVR",
         honorDnt: true
       }
