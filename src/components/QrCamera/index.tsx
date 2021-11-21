@@ -46,7 +46,7 @@ const QrCamera = () => {
   } = useStores();
   const mobile = useMedia("(max-width: 1023px)");
   const { width, height } = useResizeDetector({ targetRef: videoPreviewRef });
-  const handleGoal = useGoal("QR_CODE_DETECTED");
+  const handleGoal = useGoal("DFO4YDGI");
 
   const initiateQRcodeWorker = () => {
     if (!qrCodeReader.current) {
