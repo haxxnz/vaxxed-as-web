@@ -4,6 +4,7 @@ import { observer } from "mobx-react";
 import useMedia from "use-media";
 import "webrtc-adapter";
 import { useResizeDetector } from "react-resize-detector";
+import { useGoal } from "gatsby-plugin-fathom";
 import FlipCamera from "./FlipCamera";
 import { getDeviceId, FacingMode, getVideoDevices } from "./utils/getDeviceId";
 import useStores from "../../hooks/useStores";
@@ -45,6 +46,7 @@ const QrCamera = () => {
   } = useStores();
   const mobile = useMedia("(max-width: 1023px)");
   const { width, height } = useResizeDetector({ targetRef: videoPreviewRef });
+  const handleGoal = useGoal("QR_CODE_DETECTED");
 
   const initiateQRcodeWorker = () => {
     if (!qrCodeReader.current) {
@@ -107,6 +109,15 @@ const QrCamera = () => {
         .then(async qrResults => {
           const { status, payload } = JSON.parse(qrResults);
           if (status === "success") {
+            /* 
+            A "success" status means a QR code of any
+            kind was detected.
+              
+            For privacy reasons we are not differentiating
+            between COVID pass or any other QR code.
+            */
+
+            handleGoal();
             setLatestPayload(payload);
             if (payload?.verification !== latestPayload?.verification) {
               uiStore.setVerificationStatus({ status, payload });
