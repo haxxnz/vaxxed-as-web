@@ -5,7 +5,7 @@
     "title": "Please allow camera use"
   },
   "footer": {
-    "disclaimer": "This is not an official Government website. For more information about the COVIDpass, please go to https://nzcp.covid19.health.nz",
+    "disclaimer": "Il ne s'agit pas d'un site Web officiel du gouvernement. Pour plus d'informations sur le CovidPass, rendez-vous sur https://nzcp.covid19.health.nz",
     "privacy": "The results of the scans are not shared to any entity; private, public, or governmental. No tracking whatsoever has been added to this site, if you find any issues, please email vaxxed@contrer.as"
   },
   "header": {
@@ -14,7 +14,7 @@
   },
   "invalidCodes": {
     "expired": "Sorry, it looks like you COVIDpass has expired. Please contact the [Ministry of Health]({{link}})",
-    "invalid": "Sorry, we could not verify your COVIDpass. Please contact the [Ministry of Health]({{link}})",
+    "invalid": "Désolé, nous n'avons pas pu vérifier votre CovidPass. Veuillez contacter le [ministère de la Santé]({{link}})",
     "notAcovidPass": "Sorry, this doesn't look to be a COVIDpass. Please contact the [Ministry of Health]({{link}})"
   },
   "thisLanguage": {
@@ -24,13 +24,13 @@
   "verificationDialog": {
     "Attention needed": "Attention needed",
     "Close": "Close",
-    "Copy results": "Copy results",
+    "Copy results": "Copier les résultats",
     "Date of birth": "Date of birth",
     "First name": "First name",
     "Last name": "Last name",
     "Success": "Success",
     "Valid": "Valid",
-    "Verification results": "Verification results",
+    "Verification results": "Résultats de vérification",
     "View details": "View details",
     "onlyForVerificationPurposes": "Please use the results for verification purposes only. It's a good thing to respect everybody's privacy.",
     "yes": "Yes"

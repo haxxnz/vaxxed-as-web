@@ -1,4 +1,9 @@
 {
+  "cameraPermissionDialog": {
+    "callToAction": "السماح",
+    "content": "يتطلب {{appname}} استخدام الكاميرا لالتقاط {{passName}}",
+    "title": "يرجى السماح باستخدام الكاميرا"
+  },
   "footer": {
     "disclaimer": "هذا ليس موقعًا رسميًا للحكومة. لمزيد من المعلومات حول COVIDpass، يرجى الانتقال إلى https://nzcp.covid19.health.nz",
     "privacy": "لا تتم مشاركة نتائج عمليات المسح مع أي كيان؛ خاص أو عام أو حكومي. لم تتم إضافة أي تتبع على الإطلاق إلى هذا الموقع، إذا وجدت أي مشاكل، يرجى إرسال بريد إلكتروني إلى vaxxed@contrer.as"
@@ -23,6 +28,8 @@
     "Date of birth": "تاريخ الميلاد",
     "First name": "الاسم الأول",
     "Last name": "اسم العائلة",
+    "Success": "Success",
+    "Valid": "Valid",
     "Verification results": "نتائج التحقق",
     "View details": "عرض التفاصيل",
     "onlyForVerificationPurposes": "يرجى استخدام النتائج لأغراض التحقق فقط. إنه لأمر جيد احترام خصوصية الجميع.",

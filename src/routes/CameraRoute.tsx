@@ -33,7 +33,7 @@ const CameraRoute = () => {
             </Link>
             <h2 className="hidden text-lg font-bold leading-none md:leading-tight md:text-2xl sm:block">
               <Trans i18nKey="header.Scan your NZ COVIDpass">
-                Scan your NZ COVIDpass
+                Scan your NZ COVID pass
               </Trans>
             </h2>
             <LanguageSelector />

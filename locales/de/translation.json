@@ -1,4 +1,9 @@
 {
+  "cameraPermissionDialog": {
+    "callToAction": "Zulassen",
+    "content": "Die {{appname}} erfordert die Verwendung Ihrer Kamera, um den {{passName}} zu erfassen",
+    "title": "Bitte erlauben Sie die Verwendung der Kamera"
+  },
   "footer": {
     "disclaimer": "Dies ist keine offizielle Regierungswebsite. Weitere Informationen zum CovidPass finden Sie unter https://nzcp.covid19.health.nz",
     "privacy": "Die Ergebnisse der Scans werden vertraulich behandelt und nicht an Dritte, weder privat, öffentlich noch staatlich, weitergegeben. Dieser Webseite wurde keinerlei Tracking hinzugefügt. Wenn Sie Probleme feststellen, senden Sie bitte eine E-Mail an vaxxed@contrer.as"
@@ -23,6 +28,8 @@
     "Date of birth": "Geburtsdatum",
     "First name": "Vorname",
     "Last name": "Nachname",
+    "Success": "Success",
+    "Valid": "Valid",
     "Verification results": "Prüfergebnisse",
     "View details": "Details anzeigen",
     "onlyForVerificationPurposes": "Bitte verwenden Sie die Ergebnisse nur zu Überprüfungszwecken. Es ist gut, die Privatsphäre aller zu respektieren.",
