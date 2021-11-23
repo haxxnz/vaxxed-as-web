@@ -1,4 +1,9 @@
 {
+  "cameraPermissionDialog": {
+    "callToAction": "Tukua",
+    "content": "Ko te {{appname}} me whakamahi to kamera ki te hopu i te {{passName}}",
+    "title": "Whakaaetia te whakamahi kamera"
+  },
   "footer": {
     "disclaimer": "Ehara tenei i te paetukutuku mana a te Kawanatanga. Mo etahi atu korero mo te COVIDpass, haere ki https://nzcp.covid19.health.nz",
     "privacy": "Ko nga hua o nga karapa kaore e tohatohahia ki tetahi hinonga; tūmataiti, tūmatanui, kāwanatanga ranei. Karekau he whainga kua taapirihia ki tenei papaanga, mena ka kitea e koe etahi take, tena koa imeera vaxxed@contrer.as"
@@ -23,6 +28,8 @@
     "Date of birth": "Te ra whanau",
     "First name": "Ingoa tuatahi",
     "Last name": "Ingoa whakamutunga",
+    "Success": "Success",
+    "Valid": "Valid",
     "Verification results": "Nga hua manatoko",
     "View details": "Tirohia nga taipitopito",
     "onlyForVerificationPurposes": "Tena koa whakamahia nga hua mo nga kaupapa manatoko anake. He mea pai ki te whakaute i te noho muna o te katoa.",

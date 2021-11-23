@@ -35,6 +35,13 @@
     "changeLanguage": "تغییر زبان"
   },
   {
+    "value": "fr",
+    "name": "English",
+    "callToAction": "Use vaxxed.as in English",
+    "isRTL": false,
+    "changeLanguage": "Change language"
+  },
+  {
     "value": "hi",
     "name": "अंग्रेज़ी",
     "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",

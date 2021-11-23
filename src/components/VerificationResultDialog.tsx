@@ -112,9 +112,9 @@ const VerificationResultDialog = () => {
                 } shadow-md rounded-3xl`}
               >
                 <div className="relative w-full p-3 text-gray-50 dark:text-gray-100">
-                  <h2 className="mt-2 text-6xl font-extrabold text-center uppercase">
+                  <h2 className="mt-2 text-4xl font-extrabold text-center">
                     {success && status === "success"
-                      ? translate("verificationDialog.yes")
+                      ? translate("verificationDialog.Valid")
                       : "\u00A0"}
                   </h2>
                 </div>

@@ -1,4 +1,9 @@
 {
+  "cameraPermissionDialog": {
+    "callToAction": "允許",
+    "content": "{{appname}} 需要使用您的相機來捕捉 {{passName}}",
+    "title": "請允許使用相機"
+  },
   "footer": {
     "disclaimer": "這不是官方的政府網站。 有關 COVIDpass 的更多信息，請訪問 https://nzcp.covid19.health.nz",
     "privacy": "掃描結果不會共用給任何實體；私人、公共或政府機構。本網站沒有追蹤任何追蹤資訊，如果您發現任何問題，請電子郵件至 vaxxed@contrer.as"
@@ -23,6 +28,8 @@
     "Date of birth": "出生日期",
     "First name": "名字",
     "Last name": "姓氏",
+    "Success": "Success",
+    "Valid": "Valid",
     "Verification results": "驗證結果",
     "View details": "查看詳情",
     "onlyForVerificationPurposes": "請使用結果僅作驗證之用。尊重每個人的隱私是件好事",
