@@ -18,7 +18,7 @@
     "notAcovidPass": "عذرًا، هذا لا يبدو أنه COVIDpass. يرجى الاتصال بـ [وزارة الصحة]({{link}})"
   },
   "thisLanguage": {
-    "callToAction": "باللغة العربية vaxxed.as استخدم",
+    "callToAction": "استخدم vaxxed.as باللغة العربية",
     "name": "عربي"
   },
   "verificationDialog": {
@@ -28,8 +28,8 @@
     "Date of birth": "تاريخ الميلاد",
     "First name": "الاسم الأول",
     "Last name": "اسم العائلة",
-    "Success": "Success",
-    "Valid": "Valid",
+    "Success": "نجاح",
+    "Valid": "صالح",
     "Verification results": "نتائج التحقق",
     "View details": "عرض التفاصيل",
     "onlyForVerificationPurposes": "يرجى استخدام النتائج لأغراض التحقق فقط. إنه لأمر جيد احترام خصوصية الجميع.",

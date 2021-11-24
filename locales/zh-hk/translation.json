@@ -18,8 +18,8 @@
     "notAcovidPass": "抱歉，這看起來不是 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})"
   },
   "thisLanguage": {
-    "callToAction": "在繁體中文中使用 vaxxed.as",
-    "name": "中國傳統的"
+    "callToAction": "使用 vaxxed.as 繁體中文版",
+    "name": "繁體中文"
   },
   "verificationDialog": {
     "Attention needed": "敬請注意",
@@ -28,11 +28,11 @@
     "Date of birth": "出生日期",
     "First name": "名字",
     "Last name": "姓氏",
-    "Success": "Success",
-    "Valid": "Valid",
+    "Success": "成功",
+    "Valid": "有效",
     "Verification results": "驗證結果",
     "View details": "查看詳情",
     "onlyForVerificationPurposes": "請使用結果僅作驗證之用。尊重每個人的隱私是件好事",
-    "yes": "是"
+    "yes": "成功"
   }
 }
