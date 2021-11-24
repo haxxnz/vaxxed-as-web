@@ -2,13 +2,11 @@ import { Fragment } from "react";
 import { QrcodeIcon } from "@heroicons/react/outline";
 import { Link, Trans } from "gatsby-plugin-react-i18next";
 import loadable from "@loadable/component";
+import LazyHydrate from "react-lazy-hydration";
 import LanguageSelector from "../components/LanguageSelector";
-import { CameraPlaceholder } from "../components/QrCamera";
 import SEO from "../components/SEO";
 
-const QrCamera = loadable(() => import("../components/QrCamera"), {
-  fallback: <CameraPlaceholder />
-});
+const QrCamera = loadable(() => import("../components/QrCamera"));
 
 const VerificationResultDialog = loadable(
   () => import("../components/VerificationResultDialog")
@@ -18,6 +16,9 @@ const CameraRoute = () => {
   return (
     <Fragment>
       <SEO />
+      <LazyHydrate ssrOnly>
+        <VerificationResultDialog />
+      </LazyHydrate>
       <main className="relative flex flex-col items-center justify-center min-h-screen px-0 space-y-6 bg-gray-500 dark:bg-gray-700 sm:px-8 sm:py-8">
         <div className="z-10 flex flex-col w-full h-screen space-y-3 overflow-y-scroll bg-gray-600 shadow-2xl sm:bg-white sm:dark:bg-gray-600 sm:h-auto md:max-w-3xl sm:rounded-3xl">
           <div className="flex items-center justify-between object-cover w-full p-2 bg-white bg-center shadow-lg space-start-2 rounded-b-3xl stripped-background dark:bg-gray-50">
@@ -41,7 +42,9 @@ const CameraRoute = () => {
           <div className="relative z-0 p-1 lg:p-3">
             <div className="flex justify-center">
               <div className="w-full">
-                <QrCamera />
+                <LazyHydrate ssrOnly>
+                  <QrCamera />
+                </LazyHydrate>
               </div>
             </div>
           </div>
@@ -92,7 +95,6 @@ const CameraRoute = () => {
             </p>
           </article>
         </footer>
-        <VerificationResultDialog />
       </main>
     </Fragment>
   );
