@@ -9,6 +9,7 @@
     "hi",
     "mi",
     "nl",
+    "pt",
     "ru",
     "sm",
     "zh-cn",
@@ -48,7 +49,7 @@
       "start_url": "/fa/"
     },
     {
-      "description": "Scan your NZ COVIDpass",
+      "description": "Scannez votre CovidPass NZ",
       "dir": "ltr",
       "lang": "fr",
       "name": "Vaxxed As!",
@@ -78,6 +79,14 @@
       "name": "Vaxxed As!",
       "short_name": "vaxxed.as",
       "start_url": "/nl/"
+    },
+    {
+      "description": "Digitalize seu NZ CovidPass",
+      "dir": "ltr",
+      "lang": "pt",
+      "name": "Vaxxed As!",
+      "short_name": "vaxxed.as",
+      "start_url": "/pt/"
     },
     {
       "description": "Отсканируйте свой NZ COVIDPass",
@@ -121,6 +130,7 @@
     "/hi/",
     "/mi/",
     "/nl/",
+    "/pt/",
     "/ru/",
     "/sm/",
     "/zh-cn/",

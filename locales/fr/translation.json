@@ -1,38 +1,38 @@
 {
   "cameraPermissionDialog": {
-    "callToAction": "Allow",
-    "content": "The {{appname}} requires the use of your camera to capture the {{passName}}",
-    "title": "Please allow camera use"
+    "callToAction": "Autoriser",
+    "content": "Le {{appname}} nécessite l'utilisation de votre appareil photo pour capturer le {{passName}}",
+    "title": "Veuillez autoriser l'utilisation de la caméra"
   },
   "footer": {
     "disclaimer": "Il ne s'agit pas d'un site Web officiel du gouvernement. Pour plus d'informations sur le CovidPass, rendez-vous sur https://nzcp.covid19.health.nz",
-    "privacy": "The results of the scans are not shared to any entity; private, public, or governmental. No tracking whatsoever has been added to this site, if you find any issues, please email vaxxed@contrer.as"
+    "privacy": "Les résultats des analyses ne sont partagés avec aucune entité, privée, publique ou gouvernementale. Aucun suivi n'a été ajouté à ce site. Si vous rencontrez des problèmes, veuillez envoyer un e-mail à vaxxed@contrer.as"
   },
   "header": {
-    "Change language": "Change language",
-    "Scan your NZ COVIDpass": "Scan your NZ COVIDpass"
+    "Change language": "Changer de langue",
+    "Scan your NZ COVIDpass": "Scannez votre CovidPass NZ"
   },
   "invalidCodes": {
-    "expired": "Sorry, it looks like you COVIDpass has expired. Please contact the [Ministry of Health]({{link}})",
+    "expired": "Désolé, il semble que votre CovidPass ait expiré. Veuillez contacter le [ministère de la Santé]({{link}})",
     "invalid": "Désolé, nous n'avons pas pu vérifier votre CovidPass. Veuillez contacter le [ministère de la Santé]({{link}})",
-    "notAcovidPass": "Sorry, this doesn't look to be a COVIDpass. Please contact the [Ministry of Health]({{link}})"
+    "notAcovidPass": "Désolé, cela ne semble pas être un CovidPass. Veuillez contacter le [ministère de la Santé]({{link}})"
   },
   "thisLanguage": {
-    "callToAction": "Use vaxxed.as in English",
-    "name": "English"
+    "callToAction": "Utilisez vaxxed.as en Français",
+    "name": "Français"
   },
   "verificationDialog": {
-    "Attention needed": "Attention needed",
-    "Close": "Close",
+    "Attention needed": "Attention requise",
+    "Close": "Fermer",
     "Copy results": "Copier les résultats",
-    "Date of birth": "Date of birth",
-    "First name": "First name",
-    "Last name": "Last name",
-    "Success": "Success",
-    "Valid": "Valid",
+    "Date of birth": "Date de naissance",
+    "First name": "Prénom",
+    "Last name": "Nom",
+    "Success": "Succès",
+    "Valid": "Valide",
     "Verification results": "Résultats de vérification",
-    "View details": "View details",
-    "onlyForVerificationPurposes": "Please use the results for verification purposes only. It's a good thing to respect everybody's privacy.",
-    "yes": "Yes"
+    "View details": "Afficher les détails",
+    "onlyForVerificationPurposes": "Veuillez utiliser les résultats uniquement à des fins de vérification. C'est une bonne chose de respecter la vie privée de chacun.",
+    "yes": "Oui"
   }
 }

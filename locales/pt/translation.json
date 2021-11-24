@@ -1,0 +1,38 @@
+{
+  "cameraPermissionDialog": {
+    "callToAction": "Permitir",
+    "content": "O {{appname}} requer o uso de sua câmera para capturar o {{passName}}",
+    "title": "Permita o uso da câmera"
+  },
+  "footer": {
+    "disclaimer": "Este não é um site oficial do governo. Para obter mais informações sobre o CovidPass, acesse https://nzcp.covid19.health.nz",
+    "privacy": "Os resultados das varreduras não são compartilhados com nenhuma entidade; privada, pública ou governamental. Nenhum rastreamento foi adicionado a este site, se você encontrar algum problema, envie um e-mail para vaxxed@contrer.as"
+  },
+  "header": {
+    "Change language": "Mudar língua",
+    "Scan your NZ COVIDpass": "Digitalize seu NZ CovidPass"
+  },
+  "invalidCodes": {
+    "expired": "Desculpe, parece que você CovidPass expirou. Entre em contato com o [Ministério da Saúde]({{link}})",
+    "invalid": "Desculpe, não foi possível verificar seu CovidPass. Entre em contato com o [Ministério da Saúde]({{link}})",
+    "notAcovidPass": "Desculpe, isso não parece ser um CovidPass. Entre em contato com o [Ministério da Saúde]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Use vaxxed.as em português",
+    "name": "Português"
+  },
+  "verificationDialog": {
+    "Attention needed": "Atenção necessária",
+    "Close": "Fechar",
+    "Copy results": "Copiar resultados",
+    "Date of birth": "Data de nascimento",
+    "First name": "Nome",
+    "Last name": "Sobrenome",
+    "Success": "Sucesso",
+    "Valid": "Válido",
+    "Verification results": "Resultados da verificação",
+    "View details": "Ver detalhes",
+    "onlyForVerificationPurposes": "Use os resultados apenas para fins de verificação. É bom respeitar a privacidade de todos.",
+    "yes": "Sim"
+  }
+}
