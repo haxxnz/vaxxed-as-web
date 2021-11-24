@@ -15,12 +15,6 @@ module.exports = {
     PARALLEL_QUERY_RUNNING: false
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-loadable-components-ssr",
-      options: {
-        useHydrate: true
-      }
-    },
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-gatsby-cloud",

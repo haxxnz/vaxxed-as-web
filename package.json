@@ -18,7 +18,7 @@
     "gatsby:serve": "gatsby serve -H 0.0.0.0 -p 8001",
     "format": "prettier --write \"./**/*.{js,ts,css,json,md,mdx,html,yml,yaml,pcss,jsx,tsx}\"",
     "format:locales": "prettier --write \"./locales/**/*.{js,ts,css,json,md,mdx,html,yml,yaml,pcss,jsx,tsx}\"",
-    "postinstall": "patch-package",
+    "postinstall": "patch-package && yarn gatsby:clean",
     "lint": "eslint . --ext .tsx,.ts,.jsx,.js,.css,.scss",
     "lint:fix": "yarn lint --fix",
     "lint:package": "sort-package-json",
@@ -90,7 +90,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-transform-remove-debugger": "6.9.4",
-    "babel-preset-gatsby": "2.1.2",
+    "babel-preset-gatsby": "2.2.0",
     "babel-preset-react-app": "10.0.0",
     "browserify-zlib": "0.2.0",
     "concurrently": "6.4.0",
@@ -110,10 +110,9 @@
     "fs-extra": "10.0.0",
     "fuse.js": "6.4.6",
     "gacp": "2.10.2",
-    "gatsby": "4.1.4",
+    "gatsby": "4.2.0",
     "gatsby-plugin-fathom": "2.1.1",
     "gatsby-plugin-gatsby-cloud": "4.2.0",
-    "gatsby-plugin-loadable-components-ssr": "4.0.0",
     "gatsby-plugin-manifest": "4.2.0",
     "gatsby-plugin-offline": "5.2.0",
     "gatsby-plugin-postcss": "5.2.0",
@@ -184,5 +183,8 @@
     "node": ">=14.18.1",
     "npm": "please-use-yarn",
     "yarn": ">=1.22.10"
+  },
+  "dependencies": {
+    "react-lazy-hydration": "0.1.0"
   }
 }
