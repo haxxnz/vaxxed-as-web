@@ -12,6 +12,10 @@
     "Change language": "Changer de langue",
     "Scan your NZ COVIDpass": "Scannez votre CovidPass NZ"
   },
+  "inputPage": {
+    "Enter QR code": "Entrez le code QR",
+    "Verify": "Vérifier"
+  },
   "invalidCodes": {
     "expired": "Désolé, il semble que votre CovidPass ait expiré. Veuillez contacter le [ministère de la Santé]({{link}})",
     "invalid": "Désolé, nous n'avons pas pu vérifier votre CovidPass. Veuillez contacter le [ministère de la Santé]({{link}})",

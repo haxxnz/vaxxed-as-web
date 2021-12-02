@@ -12,6 +12,10 @@
     "Change language": "Изменить язык",
     "Scan your NZ COVIDpass": "Отсканируйте свой NZ COVIDPass"
   },
+  "inputPage": {
+    "Enter QR code": "Введите QR-код",
+    "Verify": "Проверить"
+  },
   "invalidCodes": {
     "expired": "Извините, похоже, у вас истек срок действия CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})",
     "invalid": "К сожалению, нам не удалось проверить ваш CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})",

@@ -12,6 +12,10 @@
     "Change language": "Taal wijzigen",
     "Scan your NZ COVIDpass": "Scan je NZ COVIDpass"
   },
+  "inputPage": {
+    "Enter QR code": "Voer QR-code in",
+    "Verify": "Verifiëren"
+  },
   "invalidCodes": {
     "expired": "Sorry, het lijkt erop dat je COVIDpass is verlopen. Neem contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})",
     "invalid": "Sorry, we hebben je COVIDpass niet kunnen verifiëren. Neem dan contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})",

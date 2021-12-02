@@ -12,6 +12,10 @@
     "Change language": "改变语言",
     "Scan your NZ COVIDpass": "扫描你的新西兰 CovidPass"
   },
+  "inputPage": {
+    "Enter QR code": "输入二维码",
+    "Verify": "验证"
+  },
   "invalidCodes": {
     "expired": "抱歉，您的 COVID pass 好像已過期。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
     "invalid": "抱歉，我們無法驗證您的 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})",

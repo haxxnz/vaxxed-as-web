@@ -12,6 +12,10 @@
     "Change language": "Huri reo",
     "Scan your NZ COVIDpass": "Matawai i to NZ COVIDpass"
   },
+  "inputPage": {
+    "Enter QR code": "Whakauruhia te waehere QR",
+    "Verify": "Manatoko"
+  },
   "invalidCodes": {
     "expired": "Aroha mai, te ahua nei kua pau to COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})",
     "invalid": "Aroha mai, kaore i taea e matou te manatoko i to urunga COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})",

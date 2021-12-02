@@ -12,6 +12,10 @@
     "Change language": "Suia le gagana",
     "Scan your NZ COVIDpass": "Va&#39;ai lau NZ COVIDpass"
   },
+  "inputPage": {
+    "Enter QR code": "Ulufale QR code",
+    "Verify": "Fa&#39;amaonia"
+  },
   "invalidCodes": {
     "expired": "Fa&#39;amalie atu, e foliga mai ua mae&#39;a lau COVIDpass. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})",
     "invalid": "Fa&#39;amalie atu, matou te le mafai ona fa&#39;amaonia lau COVIDpass. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})",

@@ -12,6 +12,10 @@
     "Change language": "غير اللغة",
     "Scan your NZ COVIDpass": "مسح COVID الخاص بك في نيوزيلندا"
   },
+  "inputPage": {
+    "Enter QR code": "أدخل رمز الاستجابة السريعة",
+    "Verify": "توثيق"
+  },
   "invalidCodes": {
     "expired": "عذرًا، يبدو أنك قد انتهت صلاحية COVIDpass. يرجى الاتصال بـ [وزارة الصحة]({{link}})",
     "invalid": "عذرًا، لم نتمكن من التحقق من COVID Pass الخاص بك. يرجى الاتصال بـ [وزارة الصحة]({{link}})",

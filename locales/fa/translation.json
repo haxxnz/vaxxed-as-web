@@ -12,6 +12,10 @@
     "Change language": "تغییر زبان",
     "Scan your NZ COVIDpass": "CovidPass خود را اسکن نمایید. "
   },
+  "inputPage": {
+    "Enter QR code": "کد QR را وارد کنید",
+    "Verify": "تایید کردن"
+  },
   "invalidCodes": {
     "expired": "متاسفانه، COVIDpass  شما منقضی شده است.  لطفا با [وزارت بهداشت] تماس حاصل فرمایید.  ({{link}})",
     "invalid": "متأسفانه ما قادر به تأیید CovidPass شما نیستیم. لطفا با [وزارت بهداشت] تماس بگیرید ({{link}})",

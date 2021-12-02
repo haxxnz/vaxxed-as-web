@@ -12,6 +12,10 @@
     "Change language": "भाषा बदलें",
     "Scan your NZ COVIDpass": "अपने NZ COVIDPass को स्कैन करें"
   },
+  "inputPage": {
+    "Enter QR code": "QR कोड डालें",
+    "Verify": "सत्यापित करें"
+  },
   "invalidCodes": {
     "expired": "क्षमा करें, ऐसा लगता है कि आप कोविदपास की समय सीमा समाप्त हो गई है। कृपया [स्वास्थ्य मंत्रालय (Ministry of Health)]({{link}}) से संपर्क करें",
     "invalid": "क्षमा करें, हम आपके COVIDpass की पुष्टि नहीं कर सके। कृपया [मिनिस्ट्री ऑफ़ हेल्थ] से संपर्क करें (Ministry of Health)]({{link}})",
