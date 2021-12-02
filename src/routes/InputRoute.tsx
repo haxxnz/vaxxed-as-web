@@ -11,6 +11,7 @@ import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import loadable from "@loadable/component";
 import LazyHydrate from "react-lazy-hydration";
 import { verifyPassURIOffline } from "@vaxxnz/nzcp";
+import { useGoal } from "gatsby-plugin-fathom";
 import LanguageSelector from "../components/LanguageSelector";
 import SEO from "../components/SEO";
 import useStores from "../hooks/useStores";
@@ -27,7 +28,6 @@ const trustedIssuers = [process.env.GATSBY_TRUSTED_ISSUER];
 
 const InputRoute = () => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const [latestPayload, setLatestPayload] = useState(null);
   const [inputValues, setInputValues] = useReducer(
     (state: InputState, newState: InputState) => ({ ...state, ...newState }),
     {
@@ -41,6 +41,7 @@ const InputRoute = () => {
       verificationStatus: { status }
     }
   } = useStores();
+  const handleGoal = useGoal("I4HV3NKK");
 
   const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -52,10 +53,8 @@ const InputRoute = () => {
       trustedIssuer: trustedIssuers
     });
     const payload = { verification };
-    setLatestPayload(payload);
-    if (payload?.verification !== latestPayload?.verification) {
-      uiStore.setVerificationStatus({ status: "success", payload });
-    }
+    handleGoal();
+    uiStore.setVerificationStatus({ status: "success", payload });
     setInputValues({ qrcode: "" });
   };
 
