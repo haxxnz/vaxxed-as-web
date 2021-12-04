@@ -53,6 +53,7 @@ const SEO = (): JSX.Element => {
         ))}
       <meta content="website" property="og:type" />
       <meta content="https://vaxxed.as" property="og:url" />
+      <meta content={languageName} property="og:locale" />
       <meta
         content={`vaxxed.as | ${translate(
           "header.Scan your NZ COVIDpass"
@@ -65,9 +66,20 @@ const SEO = (): JSX.Element => {
         ).replace("header", "")}`}
         property="og:description"
       />
-      <meta content="https://vaxxed.as/og.png" property="og:image" />
-      <meta content="1200" property="og:image:width" />
-      <meta content="627" property="og:image:height" />
+      <meta
+        content={`https://vaxxed.as/og/img/og-${languageName}.jpg`}
+        property="og:image"
+      />
+      <meta content="1280" property="og:image:width" />
+      <meta content="720" property="og:image:height" />
+
+      <meta
+        content={`https://vaxxed.as/og/video/og-${languageName}.mp4`}
+        property="og:video"
+      />
+      <meta content="video/mp4" property="og:video:type" />
+      <meta content="1280" property="og:video:width" />
+      <meta content="720" property="og:video:height" />
 
       <meta content="summary_large_image" property="twitter:card" />
       <meta content="https://vaxx.nz" property="twitter:url" />
@@ -83,7 +95,10 @@ const SEO = (): JSX.Element => {
         ).replace("header", "")}`}
         property="twitter:description"
       />
-      <meta content="https://vaxxed.as/og.png" property="twitter:image" />
+      <meta
+        content={`https://vaxxed.as/og/img/og-${languageName}.jpg`}
+        property="twitter:image"
+      />
     </Helmet>
   );
 };

@@ -32,7 +32,9 @@
     "release:major": "standard-version --release-as major  --no-verify",
     "release:minor": "standard-version --release-as minor  --no-verify",
     "release:patch": "standard-version --release-as patch  --no-verify",
-    "security:fix": "npx yarn-audit-fix --audit-level=high"
+    "security:fix": "npx yarn-audit-fix --audit-level=high",
+    "remotion:develop": "remotion preview src/video/index.tsx",
+    "remotion:build": "zx ./scripts/createOG.mjs"
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
@@ -53,7 +55,12 @@
     "@loadable/component": "5.15.0",
     "@n8tb1t/use-scroll-position": "2.0.3",
     "@reach/router": "1.3.4",
+    "@react-three/fiber": "7.0.21",
     "@reactour/tour": "2.3.0",
+    "@remotion/cli": "2.5.5",
+    "@remotion/eslint-config": "2.5.5",
+    "@remotion/media-utils": "2.5.5",
+    "@riku/json-to-ts": "2.1.0",
     "@tailwindcss/aspect-ratio": "0.3.0",
     "@tailwindcss/forms": "0.4.0-alpha.2",
     "@tailwindcss/typography": "0.5.0-alpha.3",
@@ -142,6 +149,8 @@
     "patch-package": "6.4.7",
     "path-browserify": "1.0.1",
     "postcss": "8.4.4",
+    "postcss-loader": "6.2.1",
+    "postcss-preset-env": "7.0.1",
     "postinstall-postinstall": "2.1.0",
     "prettier": "2.5.0",
     "prettier-plugin-sort-json": "0.0.2",
@@ -162,7 +171,9 @@
     "react-markdown": "7.1.1",
     "react-resize-detector": "6.7.6",
     "react-spring": "9.3.2",
+    "react-superellipse": "0.0.6",
     "react-window": "1.8.6",
+    "remotion": "2.5.5",
     "rimraf": "3.0.2",
     "sort-package-json": "1.53.1",
     "standard-version": "9.3.2",
@@ -180,7 +191,8 @@
     "usehooks-ts": "2.1.1",
     "webpack-bundle-analyzer-brotli": "4.0.0",
     "webrtc-adapter": "8.1.0",
-    "zod": "3.11.6"
+    "zod": "3.11.6",
+    "zx": "4.2.0"
   },
   "engines": {
     "node": ">=14.18.1",
