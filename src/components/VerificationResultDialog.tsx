@@ -13,10 +13,15 @@ import ReactMarkdown from "react-markdown";
 import { useLocation } from "@reach/router";
 import ReactCardFlip from "react-card-flip";
 import useSound from "use-sound";
+import Countdown from "react-countdown";
+import { CircularProgressbar } from "react-circular-progressbar";
 import useStores from "../hooks/useStores";
 import { VerificationStatus } from "../stores/uiStore";
 import formatDate from "../utils/formatDate";
 import tada from "../sounds/tada.mp3";
+import "react-circular-progressbar/dist/styles.css";
+
+const TIMEOUT = 10;
 
 const VerificationResultDialog = () => {
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
@@ -58,26 +63,59 @@ const VerificationResultDialog = () => {
     setIsVisible(!isVisible);
   };
 
-  const closeDialog = async () => {
+  const closeDialog = async (wait: boolean) => {
     setClosing(true);
     setIsFlipped(false);
     setIsVisible(true);
     /*
-      Wait a couple of seconds to restart
+      Wait a second to restart
       the verification process otherwise
       the dialog will show again on fast
       devices.
     */
-    await new Promise(resolve => setTimeout(() => resolve(true), 1000));
+    if (wait) {
+      await new Promise(resolve => setTimeout(() => resolve(true), 1000));
+    }
     setClosing(false);
     uiStore.resetVerificationStatus();
   };
 
   const handleTimeout = async () => {
-    await new Promise(resolve => setTimeout(() => resolve(true), 19000));
+    await new Promise(resolve =>
+      setTimeout(() => resolve(true), TIMEOUT * 1000)
+    );
     if (status === "success") {
-      closeDialog();
+      closeDialog(false);
     }
+  };
+
+  const renderer = ({ seconds }: { seconds: number }) => {
+    const progress = seconds / TIMEOUT;
+    return (
+      <span
+        className={`w-6 h-6 me-2 ${
+          seconds > 3 ? "text-sky-500" : "text-orange-500"
+        }`}
+      >
+        <CircularProgressbar
+          maxValue={1}
+          styles={{
+            path: {
+              stroke: "currentColor"
+            },
+            text: {
+              fill: "white",
+              fontSize: "40"
+            },
+            trail: {
+              stroke: "transparent"
+            }
+          }}
+          text={seconds.toLocaleString()}
+          value={progress}
+        />
+      </span>
+    );
   };
 
   useEffect(() => {
@@ -316,8 +354,14 @@ const VerificationResultDialog = () => {
                           className="z-10 flex items-center justify-center w-full px-2 py-5 text-xl text-center text-gray-200 transform shadow-sm cursor-pointer space-start-3 focus:outline-none hover:bg-gray-700 rounded-3xl dark:hover:bg-gray-800 active:scale-95"
                           disabled={closing}
                           type="button"
-                          onClick={closeDialog}
+                          onClick={() => closeDialog(false)}
                         >
+                          {status === "success" && !closing && (
+                            <Countdown
+                              date={Date.now() + TIMEOUT * 1000}
+                              renderer={renderer}
+                            />
+                          )}
                           <span>
                             <Trans i18nKey="verificationDialog.Close">
                               Close

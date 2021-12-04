@@ -31,10 +31,15 @@ const SEO = (): JSX.Element => {
       }}
     >
       <meta
-        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        content={`vaxxed.as | ${translate(
+          "header.Scan your NZ COVIDpass"
+        ).replace("header", "")}`}
         name="description"
       />
-      <title>vaxxed.as | {translate("header.Scan your NZ COVIDpass")}</title>
+      <title>
+        vaxxed.as |{" "}
+        {translate("header.Scan your NZ COVIDpass").replace("header", "")}
+      </title>
       {languageOptions
         .filter(({ value }) => value !== languageName)
         .map(({ value, callToAction }) => (
@@ -49,11 +54,15 @@ const SEO = (): JSX.Element => {
       <meta content="website" property="og:type" />
       <meta content="https://vaxxed.as" property="og:url" />
       <meta
-        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        content={`vaxxed.as | ${translate(
+          "header.Scan your NZ COVIDpass"
+        ).replace("header", "")}`}
         property="og:title"
       />
       <meta
-        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        content={`vaxxed.as | ${translate(
+          "header.Scan your NZ COVIDpass"
+        ).replace("header", "")}`}
         property="og:description"
       />
       <meta content="https://vaxxed.as/og.png" property="og:image" />
@@ -63,11 +72,15 @@ const SEO = (): JSX.Element => {
       <meta content="summary_large_image" property="twitter:card" />
       <meta content="https://vaxx.nz" property="twitter:url" />
       <meta
-        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        content={`vaxxed.as | ${translate(
+          "header.Scan your NZ COVIDpass"
+        ).replace("header", "")}`}
         property="twitter:title"
       />
       <meta
-        content={`vaxxed.as | ${translate("header.Scan your NZ COVIDpass")}`}
+        content={`vaxxed.as | ${translate(
+          "header.Scan your NZ COVIDpass"
+        ).replace("header", "")}`}
         property="twitter:description"
       />
       <meta content="https://vaxxed.as/og.png" property="twitter:image" />
