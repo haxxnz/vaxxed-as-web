@@ -21,6 +21,16 @@
     "invalid": "متأسفانه ما قادر به تأیید CovidPass شما نیستیم. لطفا با [وزارت بهداشت] تماس بگیرید ({{link}})",
     "notAcovidPass": "متاسفانه ،QR کد شما یک COVIDpass نیست.   لطفا با [وزارت بهداشت] تماس بگیرید ({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "با یک اسکنر بارکد تأیید کنید",
+      "intro": "شما هم اکنون می توانید از vaxxed.as با یک اسکنر بارکد استفاده کنید."
+    },
+    "useCamera": {
+      "callToAction": "تأیید با دوربین",
+      "intro": "استفاده از vaxxed.as با یک دوربین."
+    }
+  },
   "thisLanguage": {
     "callToAction": "استفاده از vaxxed.asبه زبان فارسی",
     "name": "فارسی"

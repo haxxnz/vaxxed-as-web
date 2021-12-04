@@ -21,6 +21,16 @@
     "invalid": "عذرًا، لم نتمكن من التحقق من COVID Pass الخاص بك. يرجى الاتصال بـ [وزارة الصحة]({{link}})",
     "notAcovidPass": "عذرًا، هذا لا يبدو أنه COVIDpass. يرجى الاتصال بـ [وزارة الصحة]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "تحقق باستخدام ماسح الباركود",
+      "intro": "يمكنك الآن استخدام vaxxed.as مع ماسح الباركود."
+    },
+    "useCamera": {
+      "callToAction": "تحقق باستخدام الكاميرا",
+      "intro": "استخدم vaxxed.as مع الكاميرا."
+    }
+  },
   "thisLanguage": {
     "callToAction": "استخدم vaxxed.as باللغة العربية",
     "name": "عربي"

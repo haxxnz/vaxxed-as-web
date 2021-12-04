@@ -21,6 +21,16 @@
     "invalid": "Desculpe, não foi possível verificar seu CovidPass. Entre em contato com o [Ministério da Saúde]({{link}})",
     "notAcovidPass": "Desculpe, isso não parece ser um CovidPass. Entre em contato com o [Ministério da Saúde]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Verifique com um leitor de código de barras",
+      "intro": "Agora você pode usar o vaxxed.as com um leitor de código de barras."
+    },
+    "useCamera": {
+      "callToAction": "Verifique com a câmera",
+      "intro": "Use vaxxed.as com uma câmera."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Use vaxxed.as em português",
     "name": "Português"

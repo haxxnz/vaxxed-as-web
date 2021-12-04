@@ -21,6 +21,16 @@
     "invalid": "Sorry, we hebben je COVIDpass niet kunnen verifiëren. Neem dan contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})",
     "notAcovidPass": "Sorry, dit lijkt geen COVIDpass te zijn. Neem contact op met het [Ministerie van Volksgezondheid (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Verifiëren met een barcodescanner",
+      "intro": "U kunt vaxxed.as nu gebruiken met een barcodescanner."
+    },
+    "useCamera": {
+      "callToAction": "Verifiëren met camera",
+      "intro": "Gebruik vaxxed.as met een camera."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Gebruik vaxxed.as in het Dutch",
     "name": "Dutch"

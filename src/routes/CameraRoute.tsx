@@ -41,10 +41,28 @@ const CameraRoute = () => {
           </div>
           <div className="relative z-0 p-1 lg:p-3">
             <div className="flex justify-center">
-              <div className="w-full">
+              <div className="w-full space-y-4">
                 <LazyHydrate ssrOnly>
                   <QrCamera />
                 </LazyHydrate>
+                <hr className="text-gray-300" />
+                <div className="flex justify-center">
+                  <div className="space-y-2">
+                    <p className="text-lg opacity-70 dark:text-gray-200">
+                      <Trans i18nKey="modeSelector.useBarcode.intro">
+                        You can now use vaxxed.as with a barcode scanner.
+                      </Trans>
+                    </p>
+                    <Link
+                      className="block px-6 py-2 text-xl font-medium text-center text-white bg-indigo-500 rounded-3xl hover:bg-indigo-600 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                      to="/input"
+                    >
+                      <Trans i18nKey="modeSelector.useBarcode.callToAction">
+                        Verify with a barcode scanner
+                      </Trans>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

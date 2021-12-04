@@ -21,6 +21,16 @@
     "invalid": "Wir bitten um Ihr Verständnis, aber leider konnten wir Ihren CovidPass nicht überprüfen. Bitte wenden Sie sich an das [Gesundheitsministerium (Ministry of Health)]({{link}})",
     "notAcovidPass": "Dies scheint nicht der CovidPass zu sein. Probieren Sie bitte erneut oder wenden Sie sich an das [Gesundheitsministerium (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Überprüfen Sie mit einem Barcodescanner",
+      "intro": "Sie können vaxxed.as jetzt mit einem Barcodescanner verwenden."
+    },
+    "useCamera": {
+      "callToAction": "Mit der Kamera überprüfen",
+      "intro": "Verwenden Sie vaxxed.as mit einer Kamera."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Verwenden Sie vaxxed.as in Deutsch",
     "name": "Deutsch"

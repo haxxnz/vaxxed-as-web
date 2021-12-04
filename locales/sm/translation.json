@@ -21,6 +21,16 @@
     "invalid": "Fa&#39;amalie atu, matou te le mafai ona fa&#39;amaonia lau COVIDpass. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})",
     "notAcovidPass": "Fa&#39;amalie atu, e le o se COVIDpass lea. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Fa&#39;amaonia i se su&#39;e fa&#39;ailoga",
+      "intro": "E mafai nei ona e fa&#39;aogaina le vaxxed.as ma se su&#39;e fa&#39;ailoga."
+    },
+    "useCamera": {
+      "callToAction": "Fa&#39;amaonia ile meapueata",
+      "intro": "Fa&#39;aoga vaxxed.as ma se meapueata."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa",
     "name": "Samoa"

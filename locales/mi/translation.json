@@ -21,6 +21,16 @@
     "invalid": "Aroha mai, kaore i taea e matou te manatoko i to urunga COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})",
     "notAcovidPass": "Aroha mai, ehara tenei i te COVIDpass. Tena koa whakapā atu ki te [Manatū Hauora (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Manatokohia me te matawai paewaehere",
+      "intro": "Ka taea e koe te whakamahi i te vaxxed.as me te matawai paewaehere."
+    },
+    "useCamera": {
+      "callToAction": "Manatoko ma te kamera",
+      "intro": "Whakamahia te vaxxed.as me te kamera."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Whakamahia te vaxxed.as i te reo Māori",
     "name": "Te reo Māori"

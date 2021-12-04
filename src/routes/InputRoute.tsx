@@ -122,7 +122,7 @@ const InputRoute = () => {
           </div>
           <div className="relative z-0 p-3 lg:p-6">
             <div className="flex justify-center">
-              <div className="w-full">
+              <div className="w-full space-y-4">
                 <fieldset>
                   <div className="space-y-6">
                     <div>
@@ -151,6 +151,24 @@ const InputRoute = () => {
                     </button>
                   </div>
                 </fieldset>
+                <hr className="text-gray-300" />
+                <div className="flex justify-center">
+                  <div className="space-y-2">
+                    <p className="text-lg opacity-70 dark:text-gray-200">
+                      <Trans i18nKey="modeSelector.useCamera.intro">
+                        Use vaxxed.as with a camera.
+                      </Trans>
+                    </p>
+                    <Link
+                      className="block px-6 py-2 text-xl font-medium text-center text-indigo-500 border border-indigo-500 rounded-full dark:border-indigo-300 dark:text-indigo-300 hover:border-indigo-600 dark:hover:border-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-800 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-50 focus:ring-indigo-500"
+                      to="/"
+                    >
+                      <Trans i18nKey="modeSelector.useCamera.callToAction">
+                        Verify with camera
+                      </Trans>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

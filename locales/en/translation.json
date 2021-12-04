@@ -21,6 +21,16 @@
     "invalid": "Sorry, we could not verify your COVIDpass. Please contact the [Ministry of Health]({{link}})",
     "notAcovidPass": "Sorry, this doesn't look to be a COVIDpass. Please contact the [Ministry of Health]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Verify with a barcode scanner",
+      "intro": "You can now use vaxxed.as with a barcode scanner."
+    },
+    "useCamera": {
+      "callToAction": "Verify with camera",
+      "intro": "Use vaxxed.as with a camera."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Use vaxxed.as in English",
     "name": "English"

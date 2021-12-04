@@ -21,6 +21,16 @@
     "invalid": "क्षमा करें, हम आपके COVIDpass की पुष्टि नहीं कर सके। कृपया [मिनिस्ट्री ऑफ़ हेल्थ] से संपर्क करें (Ministry of Health)]({{link}})",
     "notAcovidPass": "क्षमा करें, यह कोई COVIDpass नहीं लगता। कृपया [मिनिस्ट्री ऑफ़ हेल्थ] से संपर्क करें (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "बारकोड स्कैनर से सत्यापित करें",
+      "intro": "अब आप बारकोड स्कैनर के साथ vaxxed.as का उपयोग कर सकते हैं।"
+    },
+    "useCamera": {
+      "callToAction": "कैमरे से सत्यापित करें",
+      "intro": "कैमरे के साथ vaxxed.as का उपयोग करें।"
+    }
+  },
   "thisLanguage": {
     "callToAction": "हिंदी में vaxxed.as का प्रयोग करें",
     "name": "अंग्रेज़ी"

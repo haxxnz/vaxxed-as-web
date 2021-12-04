@@ -21,6 +21,16 @@
     "invalid": "抱歉，我們無法驗證您的 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
     "notAcovidPass": "抱歉，這看起來不是 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "使用条码扫描器进行验证",
+      "intro": "现在，您可以将 vaxxed.as 与条形码扫描器一起使用。"
+    },
+    "useCamera": {
+      "callToAction": "用相机验证",
+      "intro": "将 vaxxed.as 与相机一起使用。"
+    }
+  },
   "thisLanguage": {
     "callToAction": "使用 vaxxed.as 简体中文版",
     "name": "简体中文"

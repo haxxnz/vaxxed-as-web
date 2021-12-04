@@ -21,6 +21,16 @@
     "invalid": "К сожалению, нам не удалось проверить ваш CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})",
     "notAcovidPass": "Извините, похоже, это не CovidPass. Обратитесь к [Министерству здравоохранения (Ministry of Health)]({{link}})"
   },
+  "modeSelector": {
+    "useBarcode": {
+      "callToAction": "Проверка с помощью сканера штрих-кода",
+      "intro": "Теперь вы можете использовать vaxxed.as со сканером штрих-кода."
+    },
+    "useCamera": {
+      "callToAction": "Проверка с помощью камеры",
+      "intro": "Используйте vaxxed.as с камерой."
+    }
+  },
   "thisLanguage": {
     "callToAction": "Использовать vaxxed.as на русском",
     "name": "Русский"
