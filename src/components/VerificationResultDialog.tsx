@@ -1,5 +1,5 @@
 /* eslint-disable no-promise-executor-return */
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef, useState, useEffect } from "react";
 import { observer } from "mobx-react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
@@ -12,13 +12,16 @@ import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import ReactMarkdown from "react-markdown";
 import { useLocation } from "@reach/router";
 import ReactCardFlip from "react-card-flip";
+import useSound from "use-sound";
 import useStores from "../hooks/useStores";
 import { VerificationStatus } from "../stores/uiStore";
 import formatDate from "../utils/formatDate";
+import tada from "../sounds/tada.mp3";
 
 const VerificationResultDialog = () => {
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [closing, setClosing] = useState<boolean>(false);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const {
     uiStore,
@@ -26,6 +29,7 @@ const VerificationResultDialog = () => {
   } = useStores();
   const [translate] = useTranslation();
   const location = useLocation();
+  const [playTada] = useSound(tada, { volume: 1 });
 
   const languageName =
     location?.pathname?.split("/")?.filter(path => path !== "")?.[0] ?? "en";
@@ -55,18 +59,35 @@ const VerificationResultDialog = () => {
   };
 
   const closeDialog = async () => {
+    setClosing(true);
     setIsFlipped(false);
     setIsVisible(true);
-
     /*
       Wait a couple of seconds to restart
       the verification process otherwise
       the dialog will show again on fast
       devices.
     */
-    // await new Promise(resolve => setTimeout(() => resolve(true), 2000));
+    await new Promise(resolve => setTimeout(() => resolve(true), 1000));
+    setClosing(false);
     uiStore.resetVerificationStatus();
   };
+
+  const handleTimeout = async () => {
+    await new Promise(resolve => setTimeout(() => resolve(true), 19000));
+    if (status === "success") {
+      closeDialog();
+    }
+  };
+
+  useEffect(() => {
+    if (status === "success") {
+      if (success) {
+        playTada();
+      }
+      handleTimeout();
+    }
+  }, [status]);
 
   return (
     <Transition.Root as={Fragment} show={status === "success"}>
@@ -274,6 +295,7 @@ const VerificationResultDialog = () => {
                       <span className="w-full">
                         <button
                           className="z-10 flex items-center justify-center w-full px-2 py-5 text-xl text-center text-gray-200 transform shadow-sm cursor-pointer space-start-3 focus:outline-none hover:bg-gray-700 rounded-3xl dark:hover:bg-gray-800 active:scale-95"
+                          disabled={closing}
                           type="button"
                           onClick={toggleFlipped}
                         >
@@ -292,6 +314,7 @@ const VerificationResultDialog = () => {
                         <button
                           ref={closeButtonRef}
                           className="z-10 flex items-center justify-center w-full px-2 py-5 text-xl text-center text-gray-200 transform shadow-sm cursor-pointer space-start-3 focus:outline-none hover:bg-gray-700 rounded-3xl dark:hover:bg-gray-800 active:scale-95"
+                          disabled={closing}
                           type="button"
                           onClick={closeDialog}
                         >

@@ -1,17 +1,12 @@
-import {
-  Fragment,
-  useReducer,
-  ChangeEvent,
-  useState,
-  useEffect,
-  useRef
-} from "react";
+import { Fragment, useReducer, ChangeEvent, useEffect, useRef } from "react";
+import { autorun } from "mobx";
 import { QrcodeIcon } from "@heroicons/react/outline";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import loadable from "@loadable/component";
 import LazyHydrate from "react-lazy-hydration";
 import { verifyPassURIOffline } from "@vaxxnz/nzcp";
 import { useGoal } from "gatsby-plugin-fathom";
+import throttle from "lodash-es/throttle";
 import LanguageSelector from "../components/LanguageSelector";
 import SEO from "../components/SEO";
 import useStores from "../hooks/useStores";
@@ -24,7 +19,7 @@ type InputState = {
   qrcode: string;
 };
 
-const trustedIssuers = [process.env.GATSBY_TRUSTED_ISSUER];
+const trustedIssuer = [process.env.GATSBY_TRUSTED_ISSUER];
 
 const InputRoute = () => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -43,26 +38,61 @@ const InputRoute = () => {
   } = useStores();
   const handleGoal = useGoal("I4HV3NKK");
 
-  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    setInputValues({ qrcode: value });
-  };
-
-  const handleVerify = () => {
-    const verification = verifyPassURIOffline(inputValues.qrcode, {
-      trustedIssuer: trustedIssuers
-    });
+  const setVerificationState = ({ raw, verification }) => {
     const payload = { verification };
     handleGoal();
-    uiStore.setVerificationStatus({ status: "success", payload });
+    uiStore.setVerificationStatus({
+      status: "success",
+      payload,
+      raw
+    });
     setInputValues({ qrcode: "" });
   };
 
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current?.focus();
+  const continuouslyVerify = (value: string) => {
+    if (value?.startsWith("NZCP:/")) {
+      const raw = value;
+      const verification = verifyPassURIOffline(raw, {
+        trustedIssuer
+      });
+      if (verification?.success) {
+        setVerificationState({ raw, verification });
+      }
     }
-  }, [status]);
+  };
+
+  const throttledContinuouslyVerify = useRef(throttle(continuouslyVerify, 500));
+
+  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    const qrcode = value?.toLocaleUpperCase()?.trim();
+    setInputValues({ qrcode });
+    if (qrcode && qrcode.length > 300) {
+      throttledContinuouslyVerify.current(qrcode);
+    }
+  };
+
+  const handleVerify = () => {
+    if (inputValues?.qrcode) {
+      const raw = inputValues?.qrcode;
+      const verification = verifyPassURIOffline(raw, {
+        trustedIssuer
+      });
+
+      setVerificationState({ raw, verification });
+    }
+    inputRef.current?.focus();
+  };
+
+  useEffect(
+    () =>
+      autorun(() => {
+        if (inputRef.current && status !== "success") {
+          inputRef.current?.focus();
+        }
+      }),
+    []
+  );
 
   return (
     <Fragment>
