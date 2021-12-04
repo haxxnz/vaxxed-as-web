@@ -3317,10 +3317,10 @@
     "@typescript-eslint/types" "5.5.0"
     eslint-visitor-keys "^3.0.0"
 
-"@vaxxnz/nzcp@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@vaxxnz/nzcp/-/nzcp-1.0.2.tgz#f50199747ee9cef4ef7c5d5e18c36049d54f36cf"
-  integrity sha512-cekjlmNX8FgS2tgpO5fNnzAdEMhEkpDYVSldI0Ew8hw0xO3NKOIDy3busiKZinNvt+QobOXJS442UxvoJdTwmA==
+"@vaxxnz/nzcp@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vaxxnz/nzcp/-/nzcp-1.1.0.tgz#5cdfdbf799afd2155155d16201ef21178fa97a26"
+  integrity sha512-Z8TCA6Tqm8z9eJwHGhCwrnnJ1JGBYJ3qP9kYziQdIcMNKXKXl6FlBRYB639jnjinoJxOM1WFZ6CMHo+7jPp5Qw==
 
 "@vercel/webpack-asset-relocator-loader@^1.7.0":
   version "1.7.0"
