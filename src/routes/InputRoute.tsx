@@ -1,15 +1,22 @@
-import { Fragment, useReducer, ChangeEvent, useEffect, useRef } from "react";
+import {
+  Fragment,
+  useReducer,
+  ChangeEvent,
+  useEffect,
+  useRef,
+  useState
+} from "react";
 import { autorun } from "mobx";
 import { QrcodeIcon } from "@heroicons/react/outline";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import loadable from "@loadable/component";
 import LazyHydrate from "react-lazy-hydration";
-import { verifyPassURIOffline } from "@vaxxnz/nzcp";
 import { useGoal } from "gatsby-plugin-fathom";
 import throttle from "lodash-es/throttle";
 import LanguageSelector from "../components/LanguageSelector";
 import SEO from "../components/SEO";
 import useStores from "../hooks/useStores";
+import QRcodeWorker from "../workers/QRcode.worker.ts";
 
 const VerificationResultDialog = loadable(
   () => import("../components/VerificationResultDialog")
@@ -19,10 +26,21 @@ type InputState = {
   qrcode: string;
 };
 
-const trustedIssuer = [process.env.GATSBY_TRUSTED_ISSUER];
+type ParseQrcodeProps = {
+  imageData?: ImageData;
+  trustedIssuers: string[];
+  passString?: string;
+};
 
 const InputRoute = () => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const verifyButtonRef = useRef<HTMLButtonElement>(null);
+  const [latestPayload, setLatestPayload] = useState(null);
+  const qrCodeReader = useRef<
+    Worker & {
+      readQRcode: ({ passString }: ParseQrcodeProps) => Promise<string>;
+    }
+  >(null);
   const [inputValues, setInputValues] = useReducer(
     (state: InputState, newState: InputState) => ({ ...state, ...newState }),
     {
@@ -38,26 +56,32 @@ const InputRoute = () => {
   } = useStores();
   const handleGoal = useGoal("I4HV3NKK");
 
-  const setVerificationState = ({ raw, verification }) => {
-    const payload = { verification };
-    handleGoal();
-    uiStore.setVerificationStatus({
-      status: "success",
-      payload,
-      raw
-    });
-    setInputValues({ qrcode: "" });
-  };
+  const continuouslyVerify = async (value: string, isContinuous: boolean) => {
+    if (qrCodeReader?.current) {
+      qrCodeReader?.current
+        ?.readQRcode({
+          passString: value,
+          trustedIssuers: [process.env.GATSBY_TRUSTED_ISSUER]
+        })
+        .then(async qrResults => {
+          const { status, payload } = JSON.parse(qrResults);
 
-  const continuouslyVerify = (value: string) => {
-    if (value?.startsWith("NZCP:/")) {
-      const raw = value;
-      const verification = verifyPassURIOffline(raw, {
-        trustedIssuer
-      });
-      if (verification?.success) {
-        setVerificationState({ raw, verification });
-      }
+          if (isContinuous) {
+            if (payload?.verification?.success) {
+              verifyButtonRef.current?.click();
+              return null;
+            }
+          } else {
+            handleGoal();
+            setLatestPayload(payload);
+            if (payload?.verification !== latestPayload?.verification) {
+              setInputValues({ qrcode: "" });
+              uiStore.setVerificationStatus({ status, payload });
+            }
+            return true;
+          }
+          return null;
+        });
     }
   };
 
@@ -67,21 +91,23 @@ const InputRoute = () => {
     const { value } = event.target;
     const qrcode = value?.toLocaleUpperCase()?.trim();
     setInputValues({ qrcode });
-    if (qrcode && qrcode.length > 300) {
-      throttledContinuouslyVerify.current(qrcode);
+    if (qrcode && qrcode.length > 300 && qrcode?.startsWith("NZCP:/")) {
+      throttledContinuouslyVerify.current(qrcode, true);
     }
   };
 
   const handleVerify = () => {
     if (inputValues?.qrcode) {
       const raw = inputValues?.qrcode;
-      const verification = verifyPassURIOffline(raw, {
-        trustedIssuer
-      });
-
-      setVerificationState({ raw, verification });
+      continuouslyVerify(raw, false);
     }
     inputRef.current?.focus();
+  };
+
+  const initiateVerificationWorker = () => {
+    if (!qrCodeReader.current) {
+      qrCodeReader.current = new QRcodeWorker();
+    }
   };
 
   useEffect(
@@ -94,10 +120,14 @@ const InputRoute = () => {
     []
   );
 
+  useEffect(() => {
+    initiateVerificationWorker();
+  }, []);
+
   return (
     <Fragment>
       <SEO />
-      <LazyHydrate ssrOnly>
+      <LazyHydrate whenVisible>
         <VerificationResultDialog />
       </LazyHydrate>
       <main className="relative flex flex-col items-center justify-center min-h-screen px-0 space-y-6 bg-gray-500 dark:bg-gray-700 sm:px-8 sm:py-8">
@@ -143,6 +173,7 @@ const InputRoute = () => {
                       />
                     </div>
                     <button
+                      ref={verifyButtonRef}
                       className="relative block w-full p-4 text-4xl text-center text-white rounded-full bg-sky-700 focus:ring-sky-500 focus:border-sky-500 focus:z-10"
                       type="button"
                       onClick={handleVerify}
