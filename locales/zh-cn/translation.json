@@ -5,7 +5,7 @@
     "title": "请允许使用相机"
   },
   "footer": {
-    "disclaimer": "這不是官方的政府網站。 有關 COVIDpass 的更多信息，請訪問 https://nzcp.covid19.health.nz",
+    "disclaimer": "非政府官方网站。 有关 COVIDpass 的更多信息，请访问 https://nzcp.covid19.health.nz",
     "privacy": "扫描结果不会共享给任何实体；私人、公共或政府。如果你发现任何问题，请发送电子邮件至 vaxxed@contrer.as"
   },
   "header": {
@@ -17,9 +17,9 @@
     "Verify": "验证"
   },
   "invalidCodes": {
-    "expired": "抱歉，您的 COVID pass 好像已過期。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
-    "invalid": "抱歉，我們無法驗證您的 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})",
-    "notAcovidPass": "抱歉，這看起來不是 COVIDpass。 請聯繫[衛生部 (Ministry of Health)]({{link}})"
+    "expired": "抱歉，您的 COVID pass 好像已经过期。 请联系[卫生部 (Ministry of Health)]({{link}})",
+    "invalid": "抱歉，我们无法验证您的 COVIDpass。 请联系[卫生部 (Ministry of Health)]({{link}})",
+    "notAcovidPass": "抱歉，这看起來不是 COVIDpass。 请联系[卫生部 (Ministry of Health)]({{link}})"
   },
   "modeSelector": {
     "useBarcode": {
